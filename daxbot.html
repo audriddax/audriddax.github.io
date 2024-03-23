@@ -161,20 +161,20 @@
                                 const data = await result.json();
                                 const id = extractVideoId(clip);
 
-                                if (data.Subtitle.startsWith("s4tisfaction_")) {
+                                if (data.subtitle.startsWith("s4tisfaction_")) {
                                     return;
                                 }
 
                                 const newClip = {
                                     id: id,
-                                    title: data.Title,
-                                    subtitle: data.Subtitle,
-                                    thumbnailLocation: data.ThumbnailLocation,
-                                    videoLocation: data.VideoLocation,
+                                    title: data.title,
+                                    subtitle: data.subtitle,
+                                    thumbnailLocation: data.thumbnailLocation,
+                                    videoLocation: data.videoLocation,
                                     submitters: [
                                         { username: username, submitCount: 1 }
                                     ],
-                                    createdDate: new Date(data.CreatedDate),
+                                    createdDate: new Date(data.createdDate),
                                     remove: () => setPlaylist(currentPlaylist => currentPlaylist.filter(x => x.id !== id))
                                 };
 
