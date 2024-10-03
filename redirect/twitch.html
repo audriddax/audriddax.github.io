@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <script type="module">
+            const parameters = window.location.hash
+                .replace(/^#/, "")
+                .split("&")
+                .filter(x => x.trim().length !== 0)
+                .map(x => x.split("="))
+                .reduce((parameters, [key, value]) => {
+                    parameters[key] = value;
+
+                    return parameters;
+                }, {});
+            window.location.hash = "";
+
+            await fetch("http://localhost:5924", {
+                body: JSON.stringify(parameters),
+                method: "POST",
+            });
+
+            document.body.innerHTML = "<p>Credentials have been saved, you can close this window<p>";
+        </script>
+    </head>
+    <body>
+        <p>Saving credentials...</p>
+    </body>
+</html>
