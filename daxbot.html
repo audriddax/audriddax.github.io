@@ -237,7 +237,8 @@
                         const username = e.data.replace(usernamePattern, "$1");
 
                         console.debug(username);
-                        console.debug(clips);
+                        console.debug(twitchClips);
+                        console.debug(ripvodClips);
                         // https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DelightfulSneakyLaptopNotLikeThis-VHm76IkxiEnEqgnf/6bdf4c55-b75f-400d-b2e5-4fb2e58da3cc/preview.jpg
                         twitchClips.forEach(async (clipUrl) => {
                             const clipData = await getTwitchData(clipUrl);
