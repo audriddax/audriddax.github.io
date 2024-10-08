@@ -231,9 +231,9 @@
                         const usernamePattern = /^:([^!]+).*/;
 
                         /** @type {string[]} */
-                        const twitchClips = e.data.match(twitchPattern);
+                        const twitchClips = e.data.match(twitchPattern) ?? [];
                         /** @type {string[]} */
-                        const ripvodClips = e.data.match(ripvodPattern);
+                        const ripvodClips = e.data.match(ripvodPattern) ?? [];
                         const username = e.data.replace(usernamePattern, "$1");
 
                         console.debug(username);
