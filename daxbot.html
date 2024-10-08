@@ -88,6 +88,87 @@
 
             const html = htm.bind(h);
 
+            const gqlClientId = [119, 117, 121, 122, 113, 67, 68, 119, 132, 63, 122, 111, 132, 66, 110, 126, 115, 123, 64, 121, 130, 66, 131, 119, 117, 65, 116, 61, 119, 123].map(x => String.fromCharCode(x - 12)).join("");
+            const wsClientId = [118, 127, 60, 122, 60, 115, 66, 65, 66, 112, 116, 65, 114, 125, 131, 117, 132, 61, 127, 115, 62, 122, 109, 110, 122, 118, 132, 125, 128, 69].map(x => String.fromCharCode(x - 12)).join("");
+
+            const getTwitchData = async (clipUrl) => {
+                const clipIdPattern = /embed\?(clip=|.*&clip=)(?<embeddedClipId>[^&]+)|.*\/(?<clipId>[^\/\?]*)(\?.*)?$/;
+
+                const match = clipUrl.match(clipIdPattern);
+
+                if (match === null) {
+                    return;
+                }
+
+                const clipId = match.groups?.clipId ?? match.groups?.embeddedClipId;
+
+                if (clipId === undefined) {
+                    return;
+                }
+
+                const responseMessage = await fetch("https://gql.twitch.tv/gql", {
+                    method: "POST",
+                    headers: {
+                        "Client-Id": gqlClientId,
+                    },
+                    body: JSON.stringify([
+                        {
+                            operationName: "VideoAccessToken_Clip",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "36b89d2507fce29e5ca551df756d27c1cfe079e2609642b4390aa4c35796eb11" } },
+                        },
+                        {
+                            operationName: "ClipsBroadcasterInfo",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "ce258d9536360736605b42db697b3636e750fdb14ff0a7da8c7225bdc2c07e8a" } },
+                        },
+                        {
+                            operationName: "ClipsTitle",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "f6cca7f2fdfbfc2cecea0c88452500dae569191e58a265f97711f8f2a838f5b4" } },
+                        },
+                        {
+                            operationName: "ClipsChatCard",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "94c1c7d97d860722a5b7ef3c3b3de3783b37fc32d69bcccc8ea0cda372cf1f01" } },
+                        },
+                    ])
+                });
+
+                if (!responseMessage.ok) {
+                    return;
+                }
+
+                const data = await responseMessage.json();
+
+                const access = data.find(x => x?.extensions?.operationName === "VideoAccessToken_Clip");
+                const broadcaster = data.find(x => x?.extensions?.operationName === "ClipsBroadcasterInfo");
+                const title = data.find(x => x?.extensions?.operationName === "ClipsTitle");
+                const created = data.find(x => x?.extensions?.operationName === "ClipsChatCard");
+
+                const videoUrl = access.data.clip.videoQualities[0].sourceURL;
+
+                const thumbnailv1Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/(?<id>.*-offset-\d+).*.mp4/;
+                const thumbnailV2Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/v2\/media\/(?<id>.*)\/video\.mp4/;
+
+                const isV2Clip = thumbnailV2Pattern.test(videoUrl);
+
+                const thumbnailId = videoUrl.match(isV2Clip ? thumbnailV2Pattern : thumbnailv1Pattern)?.groups?.id;
+                const thumbnailRoot = isV2Clip ? "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod" : "https://production.assets.clips.twitchcdn.net";
+                const thumbnailSeparator = isV2Clip ? "/" : "-";
+
+                const thumbnailLocation = `${thumbnailRoot}/${thumbnailId}${thumbnailSeparator}preview.jpg`;
+
+                return {
+                    id: clipId,
+                    videoLocation: `${access.data.clip.videoQualities[0].sourceURL}?sig=${access.data.clip.playbackAccessToken.signature}&token=${encodeURIComponent(access.data.clip.playbackAccessToken.value)}`,
+                    thumbnailLocation,
+                    title: title.data.clip.title,
+                    subtitle: `${broadcaster.data.clip.broadcaster.displayName} playing ${broadcaster.data.clip.game.displayName}`,
+                    createdDate: new Date(created.data.clip.createdAt),
+                };
+            };
+
             const useTwitchAuthentication = () => {
                 const keys = {};
                 window.location.hash.replace(/^#/, "").split("&").filter(x => x.trim().length !== 0).map(x => x.split("=")).forEach(x => keys[x[0]] = x[1]);
@@ -96,7 +177,7 @@
                 const [accessToken, setAccessToken] = useState(keys?.access_token);
 
                 if (accessToken === undefined) {
-                    const clientId = "js0n0g656dh5fqwix1sg2nabnjxqt9";
+                    const clientId = wsClientId;
                     const scopes = ["chat:read"].map(x => encodeURIComponent(x)).join("+");
                     const state = self.crypto.randomUUID();
                     const redirectUrl = 'https://audriddax.github.io/daxbot';
@@ -145,16 +226,53 @@
                         console.debug(e.data);
 
                         //const clipPattern = /https?:\/\/clips.twitch.tv\/[^\s]+|https?:\/\/stream[a-z]+\.com[^\s]+|https?:\/\/ripvod.com[^\s]+/g
-                        const clipPattern = /https?:\/\/(clips|www).twitch.tv\/[^\s]+|https?:\/\/ripvod.com[^\s]+/g
+                        const twitchPattern = /https?:\/\/(clips|www).twitch.tv\/[^\s]+/g;
+                        const ripvodPattern = /https?:\/\/ripvod.com[^\s]+/g;
                         const usernamePattern = /^:([^!]+).*/;
 
-                        const clips = e.data.match(clipPattern) ?? [];
+                        /** @type {string[]} */
+                        const twitchClips = e.data.match(twitchPattern);
+                        /** @type {string[]} */
+                        const ripvodClips = e.data.match(ripvodPattern);
                         const username = e.data.replace(usernamePattern, "$1");
 
                         console.debug(username);
                         console.debug(clips);
+                        // https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DelightfulSneakyLaptopNotLikeThis-VHm76IkxiEnEqgnf/6bdf4c55-b75f-400d-b2e5-4fb2e58da3cc/preview.jpg
+                        twitchClips.forEach(async (clipUrl) => {
+                            const clipData = await getTwitchData(clipUrl);
 
-                        clips.forEach(async (clip) => {
+                            if (!clipData) {
+                                return;
+                            }
+
+                            const newClip = {
+                                id: clipData.id,
+                                title: clipData.title,
+                                subtitle: clipData.subtitle,
+                                thumbnailLocation: clipData.thumbnailLocation,
+                                videoLocation: clipData.videoLocation,
+                                submitters: [
+                                    { username: username, submitCount: 1 }
+                                ],
+                                createdDate: clipData.createdDate,
+                                remove: () => setPlaylist(currentPlaylist => currentPlaylist.filter(x => x.id !== clipData.id))
+                            };
+
+                            setPlaylist(currentPlaylist => {
+                                const savedClip = currentPlaylist.filter(x => x.id === newClip.id)[0];
+
+                                if (savedClip === undefined) {
+                                    return [...currentPlaylist, newClip];
+                                }
+
+                                savedClip.submitters.push({ username: username, submitCount: 1 });
+
+                                return [...currentPlaylist];
+                            });
+                        });
+
+                        ripvodClips.forEach(async (clip) => {
                             const result = await fetch('https://videoscraper-eww75nh35a-uc.a.run.app', { "method": "POST", "body": JSON.stringify({"ClipLocation": clip}), "headers": { "content-type": "application/json" } });
 
                             if (result.ok) {
