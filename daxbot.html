@@ -148,12 +148,12 @@
 
                 const videoUrl = access.data.clip.videoQualities[0].sourceURL;
 
-                const thumbnailv1Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/(?<id>.*-offset-\d+).*.mp4/;
+                const thumbnailV1Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/(?<id>.*).mp4/;
                 const thumbnailV2Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/v2\/media\/(?<id>.*)\/video\.mp4/;
 
                 const isV2Clip = thumbnailV2Pattern.test(videoUrl);
 
-                const thumbnailId = videoUrl.match(isV2Clip ? thumbnailV2Pattern : thumbnailv1Pattern)?.groups?.id;
+                const thumbnailId = videoUrl.match(isV2Clip ? thumbnailV2Pattern : thumbnailV1Pattern)?.groups?.id;
                 const thumbnailRoot = isV2Clip ? "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod" : "https://production.assets.clips.twitchcdn.net";
                 const thumbnailSeparator = isV2Clip ? "/" : "-";
 
