@@ -180,7 +180,7 @@
                     const clientId = wsClientId;
                     const scopes = ["chat:read"].map(x => encodeURIComponent(x)).join("+");
                     const state = self.crypto.randomUUID();
-                    const redirectUrl = 'https://audriddax.github.io/daxbot';
+                    const redirectUrl = 'https://audriddax.github.io/demo';
 
                     window.location = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}&state=${state}`;
                 }
