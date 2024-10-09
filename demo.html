@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            :root {
+                --theme-background: #1e1d45;
+                --theme-clip-queue: #4d2fb560;
+                --theme-clip-watching: #fb0ee560;
+                --theme-clip-hover: #780e8280;
+                --theme-clip-border: #59b477B0;
+                --theme-font: #ffffff;
+                --cerberus-red: #bc211f;
+                --cerberus-red-light: #bc211fc6;
+                --cerberus-grey: #444446;
+                --cerberus-black: #000000;
+                --cerberus-white: #ffffff;
+            }
+
+            iframe div.video-player__container {
+                background: transparent;
+            }
+
+            body {
+                font-size: 1.25em;
+                /* background-image: url('/background.svg'); */
+                background-size: cover;
+                background-position: top;
+                color: var(--theme-font);
+            }
+
+            div.clip {
+                background-color: var(--theme-clip-queue);
+                /*
+                border: 4px solid var(--theme-clip-border);
+                border-radius: 10px;
+                */
+            }
+
+            div.clip p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            div.clip:hover {
+                background-color: var(--theme-clip-hover);
+            }
+
+            div.clip[data-is-now-playing=true] {
+                background-color: var(--theme-clip-watching);
+            }
+
+            .thumbnail {
+                border-radius: 5px;
+            }
+
+            .player > img {
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            div.clip > div.close {
+                display: none;
+            }
+
+            div.clip:hover > div.close {
+                display: block;
+            }
+
+            div.close > span {
+                opacity: .5;
+            }
+
+            div.close > span:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+        </style>
+        <script type="module">
+            import { render } from 'https://unpkg.com/preact@latest?module';
+            import { h } from 'https://unpkg.com/preact@latest?module';
+            import htm from 'https://unpkg.com/htm?module';
+            import { useState, useEffect } from 'https://unpkg.com/preact@latest/hooks/dist/hooks.module.js?module';
+
+            const html = htm.bind(h);
+
+            const gqlClientId = [119, 117, 121, 122, 113, 67, 68, 119, 132, 63, 122, 111, 132, 66, 110, 126, 115, 123, 64, 121, 130, 66, 131, 119, 117, 65, 116, 61, 119, 123].map(x => String.fromCharCode(x - 12)).join("");
+            const wsClientId = [118, 127, 60, 122, 60, 115, 66, 65, 66, 112, 116, 65, 114, 125, 131, 117, 132, 61, 127, 115, 62, 122, 109, 110, 122, 118, 132, 125, 128, 69].map(x => String.fromCharCode(x - 12)).join("");
+
+            const getTwitchData = async (clipUrl) => {
+                const clipIdPattern = /embed\?(clip=|.*&clip=)(?<embeddedClipId>[^&]+)|.*\/(?<clipId>[^\/\?]*)(\?.*)?$/;
+
+                const match = clipUrl.match(clipIdPattern);
+
+                if (match === null) {
+                    return;
+                }
+
+                const clipId = match.groups?.clipId ?? match.groups?.embeddedClipId;
+
+                if (clipId === undefined) {
+                    return;
+                }
+
+                const responseMessage = await fetch("https://gql.twitch.tv/gql", {
+                    method: "POST",
+                    headers: {
+                        "Client-Id": gqlClientId,
+                    },
+                    body: JSON.stringify([
+                        {
+                            operationName: "VideoAccessToken_Clip",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "36b89d2507fce29e5ca551df756d27c1cfe079e2609642b4390aa4c35796eb11" } },
+                        },
+                        {
+                            operationName: "ClipsBroadcasterInfo",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "ce258d9536360736605b42db697b3636e750fdb14ff0a7da8c7225bdc2c07e8a" } },
+                        },
+                        {
+                            operationName: "ClipsTitle",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "f6cca7f2fdfbfc2cecea0c88452500dae569191e58a265f97711f8f2a838f5b4" } },
+                        },
+                        {
+                            operationName: "ClipsChatCard",
+                            variables: { slug: clipId },
+                            extensions: { persistedQuery: { version: 1, sha256Hash: "94c1c7d97d860722a5b7ef3c3b3de3783b37fc32d69bcccc8ea0cda372cf1f01" } },
+                        },
+                    ])
+                });
+
+                if (!responseMessage.ok) {
+                    return;
+                }
+
+                const data = await responseMessage.json();
+
+                const access = data.find(x => x?.extensions?.operationName === "VideoAccessToken_Clip");
+                const broadcaster = data.find(x => x?.extensions?.operationName === "ClipsBroadcasterInfo");
+                const title = data.find(x => x?.extensions?.operationName === "ClipsTitle");
+                const created = data.find(x => x?.extensions?.operationName === "ClipsChatCard");
+
+                const videoUrl = access.data.clip.videoQualities[0].sourceURL;
+
+                const thumbnailv1Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/(?<id>.*-offset-\d+).*.mp4/;
+                const thumbnailV2Pattern = /https:\/\/production\.assets\.clips\.twitchcdn\.net\/v2\/media\/(?<id>.*)\/video\.mp4/;
+
+                const isV2Clip = thumbnailV2Pattern.test(videoUrl);
+
+                const thumbnailId = videoUrl.match(isV2Clip ? thumbnailV2Pattern : thumbnailv1Pattern)?.groups?.id;
+                const thumbnailRoot = isV2Clip ? "https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod" : "https://production.assets.clips.twitchcdn.net";
+                const thumbnailSeparator = isV2Clip ? "/" : "-";
+
+                const thumbnailLocation = `${thumbnailRoot}/${thumbnailId}${thumbnailSeparator}preview.jpg`;
+
+                return {
+                    id: clipId,
+                    videoLocation: `${access.data.clip.videoQualities[0].sourceURL}?sig=${access.data.clip.playbackAccessToken.signature}&token=${encodeURIComponent(access.data.clip.playbackAccessToken.value)}`,
+                    thumbnailLocation,
+                    title: title.data.clip.title,
+                    subtitle: `${broadcaster.data.clip.broadcaster.displayName} playing ${broadcaster.data.clip.game.displayName}`,
+                    createdDate: new Date(created.data.clip.createdAt),
+                };
+            };
+
+            const useTwitchAuthentication = () => {
+                const keys = {};
+                window.location.hash.replace(/^#/, "").split("&").filter(x => x.trim().length !== 0).map(x => x.split("=")).forEach(x => keys[x[0]] = x[1]);
+                window.location.hash = "";
+
+                const [accessToken, setAccessToken] = useState(keys?.access_token);
+
+                if (accessToken === undefined) {
+                    const clientId = wsClientId;
+                    const scopes = ["chat:read"].map(x => encodeURIComponent(x)).join("+");
+                    const state = self.crypto.randomUUID();
+                    const redirectUrl = 'https://audriddax.github.io/daxbot';
+
+                    window.location = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}&state=${state}`;
+                }
+
+                return accessToken;
+            };
+
+            const usePlaylist = () => {
+                const [playList, setPlaylist] = useState([]);
+
+                const accessToken = useTwitchAuthentication();
+
+                useEffect(() => {
+                    const username = "DaxBot";
+
+                    const socket = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
+
+                    const channels = ["audriddax", "strippin"].map(x => `#${x}`).join(",");
+
+                    if (accessToken === undefined) {
+                        return;
+                    }
+
+                    const onOpen = e => {
+                        socket.send(`PASS oauth:${accessToken}`);
+                        socket.send(`NICK ${username}`);
+                    };
+
+                    const onMessage = async (e) => {
+                        const welcomePattern = /^:tmi\.twitch\.tv 001/;
+                        const pingPattern = /^PING/;
+
+                        if (welcomePattern.test(e.data)) {
+                            socket.send(`JOIN ${channels}`);
+
+                            return;
+                        } else if (pingPattern.test(e.data)) {
+                            socket.send(e.data.replace("PING", "PONG"));
+
+                            return;
+                        }
+
+                        console.debug(e.data);
+
+                        //const clipPattern = /https?:\/\/clips.twitch.tv\/[^\s]+|https?:\/\/stream[a-z]+\.com[^\s]+|https?:\/\/ripvod.com[^\s]+/g
+                        const twitchPattern = /https?:\/\/(clips|www).twitch.tv\/[^\s]+/g;
+                        const ripvodPattern = /https?:\/\/ripvod.com[^\s]+/g;
+                        const usernamePattern = /^:([^!]+).*/;
+
+                        /** @type {string[]} */
+                        const twitchClips = e.data.match(twitchPattern) ?? [];
+                        /** @type {string[]} */
+                        const ripvodClips = e.data.match(ripvodPattern) ?? [];
+                        const username = e.data.replace(usernamePattern, "$1");
+
+                        console.debug(username);
+                        console.debug(twitchClips);
+                        console.debug(ripvodClips);
+                        // https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/DelightfulSneakyLaptopNotLikeThis-VHm76IkxiEnEqgnf/6bdf4c55-b75f-400d-b2e5-4fb2e58da3cc/preview.jpg
+                        twitchClips.forEach(async (clipUrl) => {
+                            const clipData = await getTwitchData(clipUrl);
+
+                            if (!clipData) {
+                                return;
+                            }
+
+                            const newClip = {
+                                id: clipData.id,
+                                title: clipData.title,
+                                subtitle: clipData.subtitle,
+                                thumbnailLocation: clipData.thumbnailLocation,
+                                videoLocation: clipData.videoLocation,
+                                submitters: [
+                                    { username: username, submitCount: 1 }
+                                ],
+                                createdDate: clipData.createdDate,
+                                remove: () => setPlaylist(currentPlaylist => currentPlaylist.filter(x => x.id !== clipData.id))
+                            };
+
+                            setPlaylist(currentPlaylist => {
+                                const savedClip = currentPlaylist.filter(x => x.id === newClip.id)[0];
+
+                                if (savedClip === undefined) {
+                                    return [...currentPlaylist, newClip];
+                                }
+
+                                savedClip.submitters.push({ username: username, submitCount: 1 });
+
+                                return [...currentPlaylist];
+                            });
+                        });
+
+                        ripvodClips.forEach(async (clip) => {
+                            const result = await fetch('https://videoscraper-eww75nh35a-uc.a.run.app', { "method": "POST", "body": JSON.stringify({"ClipLocation": clip}), "headers": { "content-type": "application/json" } });
+
+                            if (result.ok) {
+                                const data = await result.json();
+                                const id = extractVideoId(clip);
+
+                                if (data.subtitle.startsWith("s4tisfaction_")) {
+                                    return;
+                                }
+
+                                const newClip = {
+                                    id: id,
+                                    title: data.title,
+                                    subtitle: data.subtitle,
+                                    thumbnailLocation: data.thumbnailLocation,
+                                    videoLocation: data.videoLocation,
+                                    submitters: [
+                                        { username: username, submitCount: 1 }
+                                    ],
+                                    createdDate: new Date(data.createdDate),
+                                    remove: () => setPlaylist(currentPlaylist => currentPlaylist.filter(x => x.id !== id))
+                                };
+
+                                setPlaylist(currentPlaylist => {
+                                    const savedClip = currentPlaylist.filter(x => x.id === newClip.id)[0];
+
+                                    if (savedClip === undefined) {
+                                        return [...currentPlaylist, newClip];
+                                    }
+
+                                    savedClip.submitters.push({ username: username, submitCount: 1 });
+
+                                    return [...currentPlaylist];
+                                });
+                            }
+                        });
+                    };
+
+                    socket.addEventListener("open", onOpen);
+
+                    socket.addEventListener("message", onMessage);
+
+                    return () => {
+                        socket.removeEventListener(onOpen);
+                        socket.removeEventListener(onMessage);
+                    };
+                }, [accessToken]);
+
+                return [playList];
+            };
+
+            const extractVideoId = (clipLocation) => {
+                var url = new URL(clipLocation);
+                var pathId = url.pathname.split('/').filter(x => x !== '').reverse()[0];
+
+                switch (pathId) {
+                    case 'embed':
+                        return url.searchParams.get('clip');
+                    default:
+                        return pathId;
+                }
+            };
+
+            const VideoPlayer = ({videoLocation, onEnded, autoplay}) => {
+                if (videoLocation === undefined) {
+                    return html`\u00A0`;
+                }
+
+                return html`<video class="w-100" src="${videoLocation}" controls autoplay onended=${onEnded} onerror=${onEnded}></video>`;
+            };
+
+            const Playlist = ({playlist, nowPlayingClipId, onSelect}) => {
+                return html`
+                    <div class="col-3 vh-100 text-center" style="overflow-y: auto;">
+                        ${playlist.map((x, index) => {
+                            const isNowPlaying = x.id === nowPlayingClipId;
+
+                            const submitCount = x.submitters.length;
+                            const submittersList = Array.from(new Set(x.submitters.map(x => x.username)));
+
+                            let submitString = "";
+
+                            if (x.submitters.length === 1) {
+                                submitString = `Submitted by ${submittersList[0]}`
+                            } else if (submittersList.length === 1) {
+                                submitString = `Submitted ${x.submitters.length} times by ${submittersList[0]}`;
+                            } else if (submittersList.length === 1) {
+                                submitString = `Submitted ${x.submitters.length} times by ${submittersList[0]} and ${submittersList[1]}`;
+                            } else {
+                                submitString = `Submitted ${x.submitters.length} times by ${submittersList[0]} and ${submittersList.length} others`;
+                            }
+
+                            const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                            const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                            const dateString = `${monthsOfYear[x.createdDate.getMonth()]} ${x.createdDate.getDate()}, ${x.createdDate.getFullYear()}`;
+
+                            return html`
+                                <div class="row p-1 m-1 clip position-relative" data-is-now-playing=${isNowPlaying} onclick=${() => !isNowPlaying && onSelect(x)}>
+                                    <div class="col-4" style="margin: auto;">
+                                        ${(x.thumbnailLocation ?? "") === "" ? html`<video class="w-100 align-middle" src="${x.videoLocation}" />` : html`<img class="w-100 align-middle" src="${x.thumbnailLocation}" />`}
+                                    </div>
+                                    <div class="col-8">
+                                        <p><b>${x.title}</b></p>
+                                        <p>${x.subtitle}\u00A0</p>
+                                        <p style="font-size: .75em;">${dateString}</p>
+                                    </div>
+                                    <div class="position-absolute text-end pe-4 text-white close">
+                                        <span onClick=${(e) => {e.stopPropagation(); x.remove();}}>X</span>
+                                    </div>
+                                </div>
+                            `;
+                        })}
+                    </div>
+                `;
+            };
+
+            const App = () => {
+                const [playlist] = usePlaylist();
+                const [nowPlayingClipId, setNowPlayingClipId] = useState(playlist[0]?.id);
+                const [autoplay, setAutoplay] = useState(false);
+
+                const nowPlayingClip = playlist.filter(x => x.id === nowPlayingClipId)[0];
+                const nextClip = nowPlayingClip === undefined ? undefined : playlist[playlist.indexOf(nowPlayingClip) + 1];
+
+                return html`
+                    <div class="container" style="max-width: 100%;">
+                        <div class="row">
+                            <div class="col-9 vh-100 player" style="display: flex; justify-content: center;">
+                                <${VideoPlayer} videoLocation=${nowPlayingClip?.videoLocation} onEnded=${() => setNowPlayingClipId(nextClip?.id) && setAutoplay(true)} />
+                            </div>
+                            <${Playlist} playlist=${playlist} nowPlayingClipId=${nowPlayingClipId} onSelect=${(x) => setNowPlayingClipId(x.id) && setAutoplay(true)} />
+                        </div>
+                    </div>
+                `;
+            };
+
+            render(html`<${App} />`, document.body);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
