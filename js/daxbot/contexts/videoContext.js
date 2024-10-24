@@ -41,6 +41,19 @@ const createAppState = async () => {
     return Math.min(queue.value.length - 1, Math.max(0, currentIndex));
   });
   const playableQueue = computed(() => queue.value.filter(x => !x.isDeleted));
+  const status = signal("unauthenticated");
+  const statusMessage = computed(() => {
+    switch (status.value) {
+      case "unauthenticated":
+        return "AUTHENTICATING...";
+      case "connecting":
+        return "CONNECTING TO CHAT...";
+      case "listening":
+        return "LISTENING FOR CLIPS";
+      default:
+        return "";
+    }
+  });
 
   const playClip = (clip) => {
     if (clip?.id !== nowPlaying.value?.id) {
@@ -83,6 +96,7 @@ const createAppState = async () => {
     nowPlaying,
     queue: playableQueue,
     nowPlayingIndex,
+    status,
     playClip,
     addClipToQueue,
     playNextClip: () => {

@@ -23,6 +23,7 @@ const useTwitchAuthentication = () => {
         const scopes = ["chat:read"].map(x => encodeURIComponent(x)).join("+");
         const state = self.crypto.randomUUID();
         const redirectUrl = "https://audriddax.github.io/demo";
+        // const redirectUrl = "http://localhost:3000/demo.html";
 
         window.location.href = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}&state=${state}`;
     }
@@ -39,15 +40,18 @@ const useTwitchChatListener = () => {
       return;
     }
 
+    context.status.value = "connecting";
+
     const username = "DaxBot";
 
     const socket = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
 
-    const channels = ["audriddax", "kyle"].map(x => `#${x}`).join(",");
+    const channels = ["audriddax", "strippin"].map(x => `#${x}`).join(",");
 
     const onOpen = e => {
       socket.send(`PASS oauth:${accessToken}`);
       socket.send(`NICK ${username}`);
+      context.status.value = "listening";
     };
 
     const onMessage = async (e) => {
