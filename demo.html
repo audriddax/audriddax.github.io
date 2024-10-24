@@ -4,10 +4,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <style>
             :root {
+                --theme-scrollbar-background: #444;
+                --theme-scrollbar-pill: #6f1b1b;
                 --theme-background: #1e1d45;
-                --theme-clip-queue: #4d2fb560;
-                --theme-clip-watching: #fb0ee560;
-                --theme-clip-hover: #780e8280;
+                --theme-clip-queue: #6f1b1b60;
+                --theme-clip-watching: #6f1b1b;
+                --theme-clip-hover: #6f1b1baf;
                 --theme-clip-border: #59b477B0;
                 --theme-font: #ffffff;
                 --cerberus-red: #bc211f;
@@ -22,25 +24,9 @@
             }
 
             body {
-                /* font-size: 1.25em; */
-                background-image: url('/background.svg');
-                background-size: cover;
-                background-position: top;
-                background-color: rgb(0, 0, 42);
+                background-color: #000;
                 color: var(--theme-font);
             }
-
-            /* div.clip {
-                background-color: var(--theme-clip-queue);
-            }
-
-            div.clip.hover {
-                background-color: var(--theme-clip-hover);
-            }
-
-            div.clip[data-is-now-playing=true] {
-                background-color: var(--theme-clip-watching);
-            } */
 
             .clip > .thumbnail {
               background-size: contain;
@@ -56,23 +42,23 @@
                     "preact/": "https://esm.sh/preact@10.19.2/",
                     "@preact/signals": "https://esm.sh/@preact/signals@1.2.2",
                     "htm/preact": "https://esm.sh/htm@3.1.1/preact?external=preact",
-                    "daxbot/components/clip": "./js/daxbot/components/clip.js",
-                    "daxbot/components/clipSubmissions": "./js/daxbot/components/clipSubmissions.js",
-                    "daxbot/components/playlist": "./js/daxbot/components/playlist.js",
-                    "daxbot/components/scrollBar": "./js/daxbot/components/scrollBar.js",
-                    "daxbot/components/videoPlayer": "./js/daxbot/components/videoPlayer.js",
-                    "daxbot/contexts/videoContext": "./js/daxbot/contexts/videoContext.js",
-                    "daxbot/hooks/useTwitchChatListener": "./js/daxbot/hooks/useTwitchChatListener.js",
-                    "daxbot/types/types.d": "./js/daxbot/types/types.d.js",
-                    "daxbot/utilities/getRipvodData": "./js/daxbot/utilities/getRipvodData.js",
-                    "daxbot/utilities/getTwitchData": "./js/daxbot/utilities/getTwitchData.js",
-                    "daxbot/utilities/option": "./js/daxbot/utilities/option.js",
-                    "daxbot/utilities/processChatMessage": "./js/daxbot/utilities/processChatMessage.js",
-                    "daxbot/app": "./js/daxbot/app.js"
+                    "daxbot/components/clip": "./js/daxbot/components/clip.js?v=1",
+                    "daxbot/components/clipSubmissions": "./js/daxbot/components/clipSubmissions.js?v=1",
+                    "daxbot/components/playlist": "./js/daxbot/components/playlist.js?v=1",
+                    "daxbot/components/scrollBar": "./js/daxbot/components/scrollBar.js?v=1",
+                    "daxbot/components/videoPlayer": "./js/daxbot/components/videoPlayer.js?v=1",
+                    "daxbot/contexts/videoContext": "./js/daxbot/contexts/videoContext.js?v=2",
+                    "daxbot/hooks/useTwitchChatListener": "./js/daxbot/hooks/useTwitchChatListener.js?v=1",
+                    "daxbot/types/types.d": "./js/daxbot/types/types.d.js?v=1",
+                    "daxbot/utilities/getRipvodData": "./js/daxbot/utilities/getRipvodData.js?v=1",
+                    "daxbot/utilities/getTwitchData": "./js/daxbot/utilities/getTwitchData.js?v=1",
+                    "daxbot/utilities/option": "./js/daxbot/utilities/option.js?v=1",
+                    "daxbot/utilities/processChatMessage": "./js/daxbot/utilities/processChatMessage.js?v=1",
+                    "daxbot/app": "./js/daxbot/app.js?v=1"
                 }
             }
         </script>
-        <script type="module" src="js/daxbot/app.js"></script>
+        <script type="module" src="js/daxbot/app.js?v=1"></script>
     </head>
     <body>
         <main></main>
