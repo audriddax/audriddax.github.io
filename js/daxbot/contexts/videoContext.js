@@ -97,6 +97,7 @@ const createAppState = async () => {
     queue: playableQueue,
     nowPlayingIndex,
     status,
+    statusMessage,
     playClip,
     addClipToQueue,
     playNextClip: () => {
