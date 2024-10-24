@@ -26,10 +26,10 @@ const testClips = [
 
 const createAppState = async () => {
   const clips = [];
-  for (const clip of testClips) {
-    const data = await processChatMessage(clip);
-    clips.push(...data);
-  }
+  // for (const clip of testClips) {
+  //   const data = await processChatMessage(clip);
+  //   clips.push(...data);
+  // }
 
   const autoPlay = signal(true);
   const autoScroll = signal(true);
