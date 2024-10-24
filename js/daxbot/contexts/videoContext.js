@@ -48,7 +48,7 @@ const createAppState = async () => {
     }
   };
 
-  const addClipToQueue = ({ id, title, subtitle, thumbnailUrl, videoUrl, submittedByUsername, createdDate }) => {
+  const addClipToQueue = ({ id, title, subtitle, thumbnail, video, submittedByUsername, createdDate }) => {
     const existingClip = queue.value.find(x => x.id === id);
 
     if (existingClip === undefined) {
@@ -56,8 +56,8 @@ const createAppState = async () => {
         id: id,
         title: title,
         subtitle: subtitle,
-        thumbnailUrl: thumbnailUrl,
-        videoUrl: videoUrl,
+        thumbnail: thumbnail,
+        video: video,
         submitters: [
           { username: submittedByUsername, submitCount: 1 }
         ],
