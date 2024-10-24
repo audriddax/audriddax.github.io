@@ -4,17 +4,7 @@ import VideoPlayer from "daxbot/components/videoPlayer";
 import Playlist from "daxbot/components/playlist";
 import VideoContext, { createAppState } from "daxbot/contexts/videoContext";
 import useTwitchChatListener from "daxbot/hooks/useTwitchChatListener";
-import { useContext } from "preact/hooks";
-
-const Status = () => {
-  const { statusMessage } = useContext(VideoContext);
-
-  return html`
-    <div class="position-absolute bottom-0" style="font-size: 64pt; font-family: 'Sixtyfour Convergence';">
-      ${statusMessage}
-    </div>
-  `;
-}
+import Status from "daxbot/components/status";
 
 const App = () => {
   useTwitchChatListener();
