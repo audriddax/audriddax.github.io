@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./js",
+    "paths": {
+      "daxbot/app": ["daxbot/app.js"],
+      "daxbot/components/*": ["daxbot/components/*"],
+      "daxbot/contexts/*": ["daxbot/contexts/*"],
+      "daxbot/hooks/*": ["daxbot/hooks/*"],
+      "daxbot/types/*": ["daxbot/types/*"],
+      "daxbot/utilities/*": ["daxbot/utilities/*"]
+    }
+  }
+}
