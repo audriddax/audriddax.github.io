@@ -49,14 +49,14 @@ const useTwitchUsername = (accessToken) => {
       setUser(data.login);
     });
   }, [accessToken]);
-
+debugger;
   return [username];
 };
 
 const useTwitchChatListener = () => {
   const context = useContext(VideoContext);
   const accessToken = useTwitchAuthentication();
-  const username = useTwitchUsername(accessToken);
+  const [username] = useTwitchUsername(accessToken);
   console.log(username);
 
   useEffect(() => {
