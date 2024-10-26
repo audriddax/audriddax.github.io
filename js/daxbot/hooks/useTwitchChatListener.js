@@ -60,7 +60,7 @@ const useTwitchLogin = (accessToken) => {
 const useTwitchChatListener = () => {
   const context = useContext(VideoContext);
   const [accessToken] = useTwitchAuthentication();
-  const [login] = useTwitchLogin(accessToken);
+  useTwitchLogin(accessToken);
 
   useEffect(() => {
     if ((accessToken === undefined) || (context.login === undefined)) {
