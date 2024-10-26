@@ -55,6 +55,8 @@ const createAppState = async () => {
     }
   });
 
+  const login = signal(undefined);
+
   const playClip = (clip) => {
     if (clip?.id !== nowPlaying.value?.id) {
       nowPlaying.value = {...clip};
@@ -93,6 +95,7 @@ const createAppState = async () => {
   return {
     autoPlay,
     autoScroll,
+    login,
     nowPlaying,
     queue: playableQueue,
     nowPlayingIndex,

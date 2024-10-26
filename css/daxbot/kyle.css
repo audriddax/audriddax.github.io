@@ -1,0 +1,10 @@
+:root {
+    --theme-scrollbar-background: #444;
+    --theme-scrollbar-pill: #6f1b1b;
+    --theme-background: #1e1d45;
+    --theme-clip-queue: #4d2fb560;
+    --theme-clip-watching: #fb0ee560;
+    --theme-clip-hover: #780e8280;
+    --theme-clip-border: #59b477B0;
+    --theme-font: #ffffff;
+}

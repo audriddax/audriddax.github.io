@@ -32,8 +32,6 @@ const useTwitchAuthentication = () => {
 };
 
 const useTwitchLogin = (accessToken) => {
-  const [login, setLogin] = useState(undefined);
-
   useEffect(() => {
     if (accessToken === undefined) {
       return;
@@ -52,13 +50,11 @@ const useTwitchLogin = (accessToken) => {
         return;
       }
 
-      setLogin(data.login);
+      VideoContext.login.value = data.login;
     });
 
     return () => { abort = true; };
   }, [accessToken]);
-
-  return [login];
 };
 
 const useTwitchChatListener = () => {
@@ -67,7 +63,7 @@ const useTwitchChatListener = () => {
   const [login] = useTwitchLogin(accessToken);
 
   useEffect(() => {
-    if ((accessToken === undefined) || (login === undefined)) {
+    if ((accessToken === undefined) || (context.login === undefined)) {
       return;
     }
 
