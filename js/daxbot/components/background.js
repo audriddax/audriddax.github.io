@@ -6,6 +6,7 @@ const Background = () => {
   const { login } = useContext(VideoContext);
 
   switch (login.value) {
+    case "audriddax":
     case "strippin":
       return html`
         <link rel="stylesheet" href="css/daxbot/strippin.css" />
@@ -19,7 +20,6 @@ const Background = () => {
           </div>
         </div>
       `;
-    case "audriddax":
     case "kyle":
       return html`
         <link rel="stylesheet" href="css/daxbot/kyle.css" />
