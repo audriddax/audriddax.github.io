@@ -73,7 +73,7 @@ const useTwitchChatListener = () => {
 
     const socket = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
 
-    const channels = `#${login}`;
+    const channels = `#${context.login}`;
 
     const onOpen = e => {
       socket.send(`PASS oauth:${accessToken}`);
