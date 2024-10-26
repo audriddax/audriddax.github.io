@@ -59,13 +59,15 @@ const useTwitchLogin = (accessToken) => {
   }, [accessToken]);
 };
 
+const validLogins = ["audriddax", "kyle", "strippin"];
+
 const useTwitchChatListener = () => {
   const context = useContext(VideoContext);
   const [accessToken] = useTwitchAuthentication();
   useTwitchLogin(accessToken);
 
   useEffect(() => {
-    if ((accessToken === undefined) || (context.login.value === undefined)) {
+    if ((accessToken === undefined) || !validLogins.includes(context.login.value)) {
       return;
     }
 
