@@ -32,6 +32,8 @@ const useTwitchAuthentication = () => {
 };
 
 const useTwitchLogin = (accessToken) => {
+  const context = useContext(VideoContext);
+
   useEffect(() => {
     if (accessToken === undefined) {
       return;
@@ -50,7 +52,7 @@ const useTwitchLogin = (accessToken) => {
         return;
       }
 
-      VideoContext.login.value = data.login;
+      context.login.value = data.login;
     });
 
     return () => { abort = true; };
