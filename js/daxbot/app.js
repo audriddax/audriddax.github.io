@@ -16,7 +16,6 @@ const App = () => {
       <div class="row">
         <div class="col-9 vh-100 player" style="display: flex; justify-content: center;">
           <${VideoPlayer} />
-          <${Status} />
         </div>
         <${Playlist} />
       </div>

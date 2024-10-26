@@ -19,6 +19,9 @@ const Background = () => {
             </div>
           </div>
         </div>
+        <div class="position-absolute bottom-0" style="font-size: 64pt; font-family: 'Sixtyfour Convergence'; z-index: -1;">
+          LISTENING FOR CLIPS
+        </div>
       `;
     case "kyle":
       return html`
