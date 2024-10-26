@@ -32,7 +32,7 @@ const useTwitchAuthentication = () => {
 };
 
 const useTwitchUsername = (accessToken) => {
-  const [username, setUsername] = useState(null);
+  const [username, setUsername] = useState("");
 
   useEffect(() => {
     if (accessToken === undefined) {
