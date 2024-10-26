@@ -5,7 +5,7 @@ import VideoContext from "daxbot/contexts/videoContext";
 const Background = () => {
   const { login } = useContext(VideoContext);
 
-  switch (login) {
+  switch (login.value) {
     case "strippin":
       return html`
         <link rel="stylesheet" href="css/daxbot/strippin.css" />
