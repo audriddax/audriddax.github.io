@@ -107,7 +107,7 @@ const useTwitchChatListener = () => {
       socket.removeEventListener("open", onOpen);
       socket.removeEventListener("message", onMessage);
     };
-  }, [accessToken]);
+  }, [accessToken, username]);
 };
 
 export default useTwitchChatListener;
