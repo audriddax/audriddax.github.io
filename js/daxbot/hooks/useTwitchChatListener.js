@@ -110,7 +110,7 @@ const useTwitchChatListener = () => {
       socket.removeEventListener("open", onOpen);
       socket.removeEventListener("message", onMessage);
     };
-  }, [accessToken, login]);
+  }, [accessToken, context.login]);
 };
 
 export default useTwitchChatListener;
