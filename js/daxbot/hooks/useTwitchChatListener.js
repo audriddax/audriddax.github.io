@@ -65,7 +65,7 @@ const useTwitchChatListener = () => {
   useTwitchLogin(accessToken);
 
   useEffect(() => {
-    if ((accessToken === undefined) || (context.login === undefined)) {
+    if ((accessToken === undefined) || (context.login.value === undefined)) {
       return;
     }
 
@@ -75,7 +75,7 @@ const useTwitchChatListener = () => {
 
     const socket = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
 
-    const channels = `#${context.login}`;
+    const channels = `#${context.login.value}`;
 
     const onOpen = e => {
       socket.send(`PASS oauth:${accessToken}`);
@@ -112,7 +112,7 @@ const useTwitchChatListener = () => {
       socket.removeEventListener("open", onOpen);
       socket.removeEventListener("message", onMessage);
     };
-  }, [accessToken, context.login]);
+  }, [accessToken, context.login.value]);
 };
 
 export default useTwitchChatListener;
