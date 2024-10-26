@@ -23,9 +23,6 @@
 
             body {
                 font-size: 1.25em;
-                background-image: url('/background.svg');
-                background-size: cover;
-                background-position: top;
                 color: var(--theme-font);
             }
 
@@ -410,9 +407,13 @@
                 `;
             };
 
-            render(html`<${App} />`, document.body);
+            render(html`<${App} />`, document.querySelector("main"));
         </script>
     </head>
     <body>
+        <video id="background" class="min-vh-100 min-vw-100 position-fixed top-0 left-0" autoplay muted loop>
+            <source src="/Kyle_Wallpaper_Animation.mp4" type="video/mp4" />
+        </video>
+        <main></main>
     </body>
 </html>
