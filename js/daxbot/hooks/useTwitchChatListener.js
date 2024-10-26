@@ -31,13 +31,15 @@ const useTwitchAuthentication = () => {
     return [accessToken];
 };
 
-const useTwitchUsername = (accessToken) => {
-  const [username, setUsername] = useState("");
+const useTwitchLogin = (accessToken) => {
+  const [login, setLogin] = useState(undefined);
 
   useEffect(() => {
     if (accessToken === undefined) {
       return;
     }
+
+    let abort = false;
 
     fetch("https://id.twitch.tv/oauth2/validate", {
       headers: {
@@ -46,20 +48,26 @@ const useTwitchUsername = (accessToken) => {
     })
     .then(response => response.json())
     .then(data => {
-      setUsername(data.login);
+      if (abort) {
+        return;
+      }
+
+      setLogin(data.login);
     });
+
+    return () => { abort = true; };
   }, [accessToken]);
 
-  return [username];
+  return [login];
 };
 
 const useTwitchChatListener = () => {
   const context = useContext(VideoContext);
   const [accessToken] = useTwitchAuthentication();
-  const [username] = useTwitchUsername(accessToken);
+  const [login] = useTwitchLogin(accessToken);
 
   useEffect(() => {
-    if ((accessToken === undefined) || (username === undefined)) {
+    if ((accessToken === undefined) || (login === undefined)) {
       return;
     }
 
@@ -69,7 +77,7 @@ const useTwitchChatListener = () => {
 
     const socket = new WebSocket("wss://irc-ws.chat.twitch.tv:443");
 
-    const channels = ["audriddax", "strippin"].map(x => `#${x}`).join(",");
+    const channels = `#${login}`;
 
     const onOpen = e => {
       socket.send(`PASS oauth:${accessToken}`);
@@ -106,7 +114,7 @@ const useTwitchChatListener = () => {
       socket.removeEventListener("open", onOpen);
       socket.removeEventListener("message", onMessage);
     };
-  }, [accessToken, username]);
+  }, [accessToken, login]);
 };
 
 export default useTwitchChatListener;
