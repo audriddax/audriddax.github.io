@@ -31,12 +31,36 @@ const useTwitchAuthentication = () => {
     return accessToken;
 };
 
-const useTwitchChatListener = () => {
-  const context = useContext(VideoContext);
-  const accessToken = useTwitchAuthentication();
+const useTwitchUsername = (accessToken) => {
+  const [username, setUsername] = useState(undefined);
 
   useEffect(() => {
     if (accessToken === undefined) {
+      return;
+    }
+
+    fetch("https://id.twitch.tv/oauth2/validate", {
+      headers: {
+        "Authorization": `Bearer ${accessToken}`,
+      },
+    })
+    .then(response => response.json())
+    .then(data => {
+      setUser(data.login);
+    });
+  }, [accessToken]);
+
+  return [username];
+};
+
+const useTwitchChatListener = () => {
+  const context = useContext(VideoContext);
+  const accessToken = useTwitchAuthentication();
+  const username = useTwitchUsername(accessToken);
+  console.log(username);
+
+  useEffect(() => {
+    if ((accessToken === undefined) || (username === undefined)) {
       return;
     }
 
