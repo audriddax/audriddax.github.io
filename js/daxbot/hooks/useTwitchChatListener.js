@@ -46,7 +46,7 @@ const useTwitchUsername = (accessToken) => {
     })
     .then(response => response.json())
     .then(data => {
-      setUser(data.login);
+      setUsername(data.login);
     });
   }, [accessToken]);
 debugger;
