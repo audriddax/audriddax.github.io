@@ -28,11 +28,11 @@ const useTwitchAuthentication = () => {
         window.location.href = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scopes}&state=${state}`;
     }
 
-    return accessToken;
+    return [accessToken];
 };
 
 const useTwitchUsername = (accessToken) => {
-  const [username, setUsername] = useState(undefined);
+  const [username, setUsername] = useState(null);
 
   useEffect(() => {
     if (accessToken === undefined) {
@@ -49,15 +49,14 @@ const useTwitchUsername = (accessToken) => {
       setUsername(data.login);
     });
   }, [accessToken]);
-debugger;
+
   return [username];
 };
 
 const useTwitchChatListener = () => {
   const context = useContext(VideoContext);
-  const accessToken = useTwitchAuthentication();
+  const [accessToken] = useTwitchAuthentication();
   const [username] = useTwitchUsername(accessToken);
-  console.log(username);
 
   useEffect(() => {
     if ((accessToken === undefined) || (username === undefined)) {
