@@ -13,7 +13,7 @@ const Background = () => {
           <div class="col-9">
             <div class="d-flex justify-content-center align-items-center" style="height: 85%;">
               <div class="ratio ratio-1x1 rounded-circle logo" style="width: 40%;">
-                <img class="rounded-circle" src="strippin.png" />
+                <img class="rounded-circle" src="SAMBAD.gif" />
               </div>
             </div>
           </div>
