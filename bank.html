@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+        <script type="module">
+            import { DataTable, convertCSV } from 'https://esm.sh/simple-datatables@9.2.1';
+
+            const loadCSV = async () => {
+                const url = document.getElementById("url").value.trim();
+                if (url.length === 0) {
+                    return;
+                }
+
+                const results = document.querySelector("#results");
+                results.datatable?.destroy();
+                results.innerHTML = "";
+
+                const responseMessage = await fetch(url);
+
+                if (!responseMessage.ok) {
+                    return;
+                }
+
+                const response = await responseMessage.text();
+
+                const newTable = document.createElement("table");
+                results.append(newTable);
+                results.datatable = new DataTable(newTable);
+                results.datatable.insert(convertCSV({
+                    data: response.trim(),
+                    headings: true,
+                    columnDelimiter: ",",
+                    lineDelimiter: "\n"
+                }));
+            }
+
+            // loadCSV("./test.csv");
+            // globalThis.loadCSV = loadCSV;
+            // datatable.
+            // responseMessage = await fetch("./test.csv");
+            // response = await responseMessage.text();
+            // datatable.insert(convertCSV({
+            //     data: response,
+            //     headings: true,
+            //     columnDelimiter: ",",
+            //     lineDelimiter: "\n"
+            // }));
+
+            // debugger;
+
+            document.querySelector("button").addEventListener("click", () => {
+                loadCSV(document.getElementById("url").value);
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <label for="url">Link</label>
+            <input type="text" id="url" name="url" value="./test.csv">
+            <button type="button">Load</button>
+        </form>
+        <div id="results"></div>
+    </body>
+</html>
