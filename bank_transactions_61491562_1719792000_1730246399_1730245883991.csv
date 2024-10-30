@@ -1,0 +1,598 @@
+id,comment,type,direction,from_account_id,from_civ_name,from_account_name,to_account_id,to_civ_name,to_account_name,amount,date,tax_percentage,tax_type,tax_id
+93567c20-35c8-4842-9a10-d0326fa23061,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,115,Mon Jul 01 2024 14:31:28 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+49562acd-f727-418b-b62b-675753907c9f,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,58,Mon Jul 01 2024 14:32:58 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+9058c7f1-2371-4e0e-8cb1-547e38b8b560,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Mon Jul 01 2024 14:33:44 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+45e28688-1ec2-4b7c-a6a1-b42d2cec7c8f,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2300,Mon Jul 01 2024 14:56:09 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+ed5b9f7d-05ed-4597-a704-2d6460b91d34,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,1000,Tue Jul 02 2024 14:32:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+9cb9a21f-6d72-4314-91b3-5c436d5a6ea8,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,7124,Tue Jul 02 2024 16:56:10 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bf165137-d8a7-4e2f-abd7-144e6498a750,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,20000,Tue Jul 02 2024 16:57:11 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+8a5da457-0229-4dfc-9ffd-cba5acd8d1e2,Restaurant Order Payment 23e0201a-0979-4c82-8419-16faec10864e,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,403,Tue Jul 02 2024 17:24:52 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+c1322ba5-cae0-4c1c-8a29-33a2fcb7529f,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,5511,Tue Jul 02 2024 18:34:55 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+cb669571-091b-46e5-97e0-e424464ab1c8,Business Services Payment: Fuel purchase of 100 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,120,Wed Jul 03 2024 00:56:56 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+fe67260f-285e-411e-9aae-59189acf75e7,Business Services Reimbursement: Fuel purchase of 17 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,20,Wed Jul 03 2024 01:01:56 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+e87e60ab-2e39-4251-a8f3-469da33674d6,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Wed Jul 03 2024 15:20:31 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+d3c29246-f237-4d65-ab07-dc6d652765f6,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Wed Jul 03 2024 15:37:14 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+cb6c4a3a-526e-4593-bce3-761a1c87ea8f,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,1313,Wed Jul 03 2024 20:15:41 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+15a06729-a3d7-4896-8bfb-30f76b1b0cb4,Restaurant Order Payment 4e2a9215-e00c-4822-b384-47101bb76388,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,345,Thu Jul 04 2024 14:29:03 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+b0032f3d-f5cb-4bbe-a11a-90950aead68e,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,25000,Thu Jul 04 2024 14:53:54 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bf8cd0cd-c9c6-4416-a392-8742723fdacc,Business Services Payment: Fuel purchase of 104 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,125,Thu Jul 04 2024 15:52:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7c8fcf0d-09f8-4320-a14c-3d0bd2e94ab6,Business Services Reimbursement: Fuel purchase of 17 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,20,Thu Jul 04 2024 15:57:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+8721f9fa-28ad-47ec-84ca-cdd3c91c9134,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,6000,Thu Jul 04 2024 17:11:46 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2e2f78f0-ce92-4b9b-b846-41a5f250991e,Business Services Payment: Fuel purchase of 70 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,84,Thu Jul 04 2024 17:31:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+2068b513-8d01-40ab-8729-d756fe80b141,Business Services Reimbursement: Fuel purchase of 12 gallons of regular fuel reimbursed.,purchase,in,1,Lance Malton,null,61491562,Kyle Pred,Personal Account,14,Thu Jul 04 2024 17:36:28 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+e2bec4e0-e831-4018-95bd-61307347b6e4,Business Services Payment: Fuel purchase of 78 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,94,Thu Jul 04 2024 18:27:30 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ccee8940-8471-42a8-8f86-059abeb9e039,Business Services Reimbursement: Fuel purchase of 13 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,16,Thu Jul 04 2024 18:32:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4818d0b9-9051-4492-bccd-46011674a51a,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,1434,Thu Jul 04 2024 21:00:26 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+66f564f1-e1cb-47cc-bd66-f180925e9846,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,20000,Thu Jul 04 2024 22:00:37 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2ee6ba8d-e392-4d80-abad-7e40a1c0fdd3,Business Services Payment: Fuel purchase of 110 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,132,Thu Jul 04 2024 22:14:57 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4f8a8498-125c-4596-bf3f-e287ae894ad2,Business Services Reimbursement: Fuel purchase of 18 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,22,Thu Jul 04 2024 22:19:57 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d7bd4933-698b-42c9-9323-2bb6f478d46b,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,3680,Fri Jul 05 2024 14:31:25 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+f838cc34-d775-4250-8ed9-a313a34d472f,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2300,Fri Jul 05 2024 15:13:17 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+eff3370c-4714-48c8-83b5-cfe4691bb424,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2300,Fri Jul 05 2024 15:13:28 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+b4960eb5-1113-4028-947f-8e205027d963,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,288,Fri Jul 05 2024 15:13:40 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+82e9110c-a387-4b60-a83c-2ce77ddac577,Business Services Payment: Fuel purchase of 95 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,114,Fri Jul 05 2024 17:41:38 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+17b7911e-d50a-4491-9cf2-fe2c371237d8,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2300,Fri Jul 05 2024 17:44:29 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+f5b695ea-3e6a-488a-8176-e77b22beb59a,Business Services Reimbursement: Fuel purchase of 29 gallons of regular fuel reimbursed.,purchase,in,1,Michael Michaelson,null,61491562,Kyle Pred,Personal Account,34,Fri Jul 05 2024 17:46:38 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b0aac3b3-238d-452c-a626-5c6c797f2d41,Business Services Payment: Fuel purchase of 119 gallons of regular fuel.,purchase,out,61491562,Maynard Schmidt,Personal Account,1,null,null,143,Fri Jul 05 2024 18:47:17 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6963a8ca-c2a6-4b3e-81a9-c81182c26ad9,Business Services Reimbursement: Fuel purchase of 20 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,24,Fri Jul 05 2024 18:52:17 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+6280c28c-fb6e-40e8-b3d6-b629d67883d5,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,25000,Fri Jul 05 2024 18:55:32 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c62b74d4-88c2-450f-b269-58737deb1ab5,Business Services Payment: Fuel purchase of 107 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,128,Fri Jul 05 2024 20:00:59 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a98c97d7-c047-4e27-a997-1ce7d6003aaf,Business Services Reimbursement: Fuel purchase of 18 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,22,Fri Jul 05 2024 20:06:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+7a59e979-142c-402f-a5db-0caab4bc8773,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,1569,Fri Jul 05 2024 21:39:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+682465b3-5014-4e9b-a7cd-e3b373e2dac9,,transfer,out,61491562,Kyle Pred,Personal Account,61384491,Drake Morgan,Personal Account,15000,Fri Jul 05 2024 21:39:15 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bb398c21-a73b-42f4-a38f-ad2b7f399aa1,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,86,Sat Jul 06 2024 23:11:39 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0262b2ea-fa9b-4849-bb02-0f28101fd225,Restaurant Order Payment 492f9903-8f50-4846-89d7-d77831701bf2,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,345,Sat Jul 06 2024 23:15:51 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+d884b657-dd4f-47ea-b54e-d80a4de93561,Business Services Payment: Fuel purchase of 37 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,44,Fri Jul 12 2024 14:33:11 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d5efd82a-e798-4f34-b385-32897f53b5ac,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,7,Fri Jul 12 2024 14:38:12 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+f2f8f826-33f8-4a6e-b3d6-95e2c3b86f50,Restaurant Order Payment c06e02f3-f5cb-487f-ba59-c9c87d21e1dd,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,345,Fri Jul 12 2024 14:38:57 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+ebda5d75-f3ae-4fce-94fe-b41626a72d56,personal,transfer,in,61581890,Brittany Angel,Personal Account,61491562,Kyle Pred,Personal Account,15000,Fri Jul 12 2024 16:27:39 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+3be5f7a3-6f93-4b05-8680-7b4760b25ad3,Job: Tow Trucker,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,582,Fri Jul 12 2024 16:45:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d3661186-0609-42f2-8da7-91f44e31dabd,Business Services Payment: Fuel purchase of 74 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,89,Fri Jul 12 2024 19:22:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+c17ddd21-e2e2-49b7-8a0a-aa0f035c678a,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,173,Fri Jul 12 2024 19:26:44 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0f3bb8a7-5ba6-49a0-a59f-f66b120958b0,Business Services Reimbursement: Fuel purchase of 12 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,14,Fri Jul 12 2024 19:27:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+df4ec81d-9a08-4a1d-931f-6c89dae3f0ce,Asset Tax Payment: Little Seoul,Palomino Ave,229,transfer,out,61491562,Kyle Pred,Personal Account,1,null,null,13464,Fri Jul 12 2024 19:31:59 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+7d3e06bc-811a-46f8-b064-0dfaf3e0705e,Asset Tax Payment: Little Seoul,Palomino Ave,229 (Consumption),transfer,out,61491562,Kyle Pred,Personal Account,1,null,null,5926,Fri Jul 12 2024 19:32:02 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+817ee2fb-7527-4dd2-af2f-8d0df89f897f,Property Transfer: Little Seoul,Palomino Ave,229,purchase,in,61393639,null,Personal Account,61491562,Kyle Pred,Personal Account,1,Fri Jul 12 2024 19:40:02 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d4962970-b2fb-4f12-928b-2d9a04e81d11,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,51,Sat Jul 13 2024 14:42:20 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+77158afb-9f02-490c-901e-9795d8043329,Business Services Payment: Fuel purchase of 65 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,78,Sat Jul 13 2024 14:43:56 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+5ab70b2f-e59a-40e4-8af0-b7a1eb4f0c07,Business Services Reimbursement: Fuel purchase of 11 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,13,Sat Jul 13 2024 14:48:56 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c2b14d8e-cbd5-4173-b25b-a70717e46466,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,1922,Sat Jul 13 2024 16:55:06 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d8c8cd32-a102-4e0a-94d5-2f7d8671fc2d,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Sun Jul 14 2024 14:18:36 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+a7b0bc9a-acc7-4c50-9286-bd3a933652a3,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,144,Sun Jul 14 2024 14:31:30 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+920046a8-d411-458b-b197-134669090184,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Sun Jul 14 2024 14:41:49 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+dce2d916-8fa5-4fd2-8787-9b664431aa4d,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Sun Jul 14 2024 14:55:36 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0dab16b0-47c9-456d-bdeb-d205c9803141,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Sun Jul 14 2024 14:55:52 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+231dfd68-f256-4f62-8760-dddb06570d56,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,29,Sun Jul 14 2024 15:09:17 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+6fa03de4-b452-40de-9e88-cb605125ae19,Fine,forfeiture,out,61491562,Kyle Pred,Personal Account,1,null,null,37500,Sun Jul 14 2024 16:06:21 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+adfc1051-67fb-4f94-bf43-9953d1b7426b,Fine,forfeiture,out,61491562,Kyle Pred,Personal Account,3,null,null,12500,Sun Jul 14 2024 16:06:21 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d44c7fd0-9813-4af6-b42f-07c9722e96b9,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,14499,Mon Jul 15 2024 01:56:54 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+5a755d73-3e10-4901-957b-f26cc96625ed,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,26615,Mon Jul 15 2024 23:25:04 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ff98c517-297c-44b4-b2c2-2c47ab32a143,Fine,forfeiture,out,61491562,Kyle Pred,Personal Account,1,null,null,103,Tue Jul 16 2024 02:19:31 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+15faa591-be50-4f0f-ab1f-4cde526f229c,Fine,forfeiture,out,61491562,Kyle Pred,Personal Account,3,null,null,35,Tue Jul 16 2024 02:19:31 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c6d4794f-918f-426b-9837-8a9addf0a045,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,575,Tue Jul 16 2024 14:31:01 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+fee08533-38cf-48db-ab3d-5bc883eadc45,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,160,Tue Jul 16 2024 15:08:07 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+7fd76107-48a6-45dd-8a9a-8846ea1f0ea6,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,500,Tue Jul 16 2024 15:19:55 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4e7d09e5-8615-4981-a925-ac38c7a9ae87,ATM Usage Fee - a2174f85-602b-4b2b-8a09-23f4f856b5a8,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,25,Tue Jul 16 2024 15:19:55 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+44aae26a-4ada-495f-998f-e2c58707c564,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,970,Tue Jul 16 2024 16:16:09 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d9a61a6d-6a60-4579-a4c3-9f4e4566baf3,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,25,Tue Jul 16 2024 16:16:26 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+7f43e575-7499-4312-b928-38e127773fb1,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,25,Tue Jul 16 2024 16:17:55 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+19803903-4b8e-40ff-9573-e63f7f86ea49,Business Services Payment: Fuel purchase of 91 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,109,Tue Jul 16 2024 17:11:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+dc516e6b-a0a1-4a6c-8c42-039985e02b4d,Business Services Reimbursement: Fuel purchase of 15 gallons of regular fuel reimbursed.,purchase,in,1,Drew Mason,null,61491562,Kyle Pred,Personal Account,18,Tue Jul 16 2024 17:16:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+fe387422-badf-4c23-bd69-8ae8c1255d51,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,575,Tue Jul 16 2024 17:49:57 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+fe628c93-677a-4636-b904-2f909d2352fb,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,107,Tue Jul 16 2024 17:55:41 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+89ec65ae-e724-4192-8aa4-30ac14a3f735,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,325,Tue Jul 16 2024 19:06:10 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ff65afcc-1ede-47f3-9fc2-fe34087c3d59,Business Services Payment: Fuel purchase of 53 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,64,Tue Jul 16 2024 22:43:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+578b52df-1de7-46ae-9533-a0e3308df23c,Business Services Reimbursement: Fuel purchase of 9 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,11,Tue Jul 16 2024 22:48:58 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+288652f1-a4df-409a-bd79-61d1438785b6,Restaurant Order Payment bc3561c3-2d36-4339-9b36-80a7628753b9,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,690,Wed Jul 17 2024 14:15:44 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0c6c9adb-89cd-47f8-a02e-18692f865075,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,1120,Wed Jul 17 2024 14:25:43 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+e1e5aef4-6c8f-4c50-92db-7412d9d27514,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,1500,Wed Jul 17 2024 15:04:49 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+78fbddf0-ca46-4863-a7d5-20cf434f56f9,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,14413,Wed Jul 17 2024 15:21:16 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c9cf6796-0ecd-425a-ba58-ec1769f1ed5e,Restaurant Order Payment 106f8dfd-41c1-4782-8bab-21e73ece499a,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,633,Wed Jul 17 2024 20:24:51 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+ce6fc38a-378a-4f1f-a7e7-aacf07ea2af5,Business Services Payment: Fuel purchase of 62 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,74,Wed Jul 17 2024 20:56:33 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b4d633bc-71e1-4d35-a579-fc32d235c4c8,Business Services Reimbursement: Fuel purchase of 10 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,12,Wed Jul 17 2024 21:01:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+af5fb566-c6cf-4df2-9e16-407e86db5bfd,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,70,Thu Jul 18 2024 04:42:07 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4b815372-41a6-4b0e-857a-b4a654566cc0,Restaurant Order Payment c17b4042-0395-4ad6-ab78-f7031eaac277,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,1150,Fri Jul 19 2024 21:08:56 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+42855537-ed7a-4c77-a405-b99911624116,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,58,Sat Jul 20 2024 14:14:38 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+be25bb2a-69cf-41db-a7a9-d65c9c95164b,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,58,Sat Jul 20 2024 14:16:10 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+04d745a0-1b07-4da1-9e98-18932a180559,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,7932,Sat Jul 20 2024 14:20:07 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+948765fa-094d-4d54-b5fe-bf69bf323c72,Restaurant Order Payment b4c5e357-70f3-420a-98c2-2c466309cb40,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,690,Sat Jul 20 2024 15:36:52 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+194dd5c4-9b44-431b-a1cd-5ade8b61e5d3,Business Services Payment: Fuel purchase of 88 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,106,Sat Jul 20 2024 17:55:08 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+90a8112d-b06b-4697-9a3a-a018c60ef020,Business Services Reimbursement: Fuel purchase of 15 gallons of regular fuel reimbursed.,purchase,in,1,Jason Mitchell,null,61491562,Kyle Pred,Personal Account,18,Sat Jul 20 2024 18:00:09 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b7a386f0-3d74-47fc-b745-bc772db9eb1c,Business Services Payment: Fuel purchase of 94 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,113,Sat Jul 20 2024 20:17:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0e596912-d721-46bf-a421-7c4afec6aef8,Business Services Reimbursement: Fuel purchase of 16 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,19,Sat Jul 20 2024 20:22:45 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+a18a7c78-7d55-4142-9a65-977b8570928f,Restaurant Order Payment 940f3a94-bee6-4bf6-b26f-6b65b62433bc,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,489,Sat Jul 20 2024 20:54:02 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+4dc27161-81e3-44cd-a298-c8e65bd14bad,Restaurant Order Payment b154c6f8-fd77-4c3a-95f9-006e1ee7e895,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,690,Sun Jul 21 2024 15:08:35 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+70a3416e-8974-42c9-9b31-2754cacecccc,Paycheck for Kyle Pred,payslip,in,1,Government Pay,null,61491562,Kyle Pred,Personal Account,9346,Sun Jul 21 2024 15:26:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+850122cc-792f-4271-8716-e49c646f9c55,Restaurant Order Payment 44b4cd05-0548-4782-affe-24f157310cf0,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,1208,Mon Jul 22 2024 14:30:55 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+bed09b60-6b5f-4a3b-a873-def9490a6253,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Mon Jul 22 2024 15:54:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+74e0c3fe-4a5f-490e-912b-f9640f37a1fa,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,180,Mon Jul 22 2024 17:10:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a2f4f5bc-f3ad-42f9-8224-25f2a51a2a69,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,228,Mon Jul 22 2024 18:50:51 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+74d61160-bf93-4726-8c75-792d8b1e8f65,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,74,Tue Jul 23 2024 14:09:58 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+176cf40a-a9d2-4f00-9800-820caae0920c,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,156,Tue Jul 23 2024 15:12:13 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+2403de4d-f815-4be6-ad00-a4e94e2863bc,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,300,Tue Jul 23 2024 20:51:29 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0bc405d9-ddb3-4b3d-8101-9aaada4eecb5,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,60,Wed Jul 24 2024 14:10:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b26b08ce-e1de-490b-a838-3d2951115009,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,300,Wed Jul 24 2024 14:32:05 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0d16964f-749f-4968-b862-f37033445558,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,300,Wed Jul 24 2024 14:32:09 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+895a6fe5-c78f-4ca3-9eb3-52942e631763,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,1500,Wed Jul 24 2024 15:04:20 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+05a3e9f5-d1a6-41e3-888b-60283d3d07d3,ATM Usage Fee - 271b76c4-d6b2-45b4-a3ee-04b799f64ca4,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,75,Wed Jul 24 2024 15:04:20 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+9e7e0a34-6b96-4521-ad8b-393793033852,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2400,Wed Jul 24 2024 15:08:10 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+12deff52-984b-47bd-adca-aa6882749c66,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,4800,Wed Jul 24 2024 15:41:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+2151e38f-e081-4544-8bb0-bc75d7063077,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,12000,Wed Jul 24 2024 15:59:45 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+424d3ceb-947d-4f85-80ed-a00b7e6d085e,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,60,Wed Jul 24 2024 16:16:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+fd68b886-bb7b-4d34-b578-ff88f84f4121,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,30,Wed Jul 24 2024 16:16:39 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+84585426-dc0e-46d0-9c2c-c6488da60156,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,20000,Thu Jul 25 2024 15:10:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bda8352a-f9e6-45ed-903a-f78be45ac920,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2400,Thu Jul 25 2024 15:58:10 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1c682da5-0bbc-4671-a053-23f0fe6c1de3,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,90,Thu Jul 25 2024 17:14:46 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+8002494d-807b-4612-b049-aacca27e7d72,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,300,Thu Jul 25 2024 17:33:46 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+3b504c06-d0eb-410a-b3a5-093184478004,Business Services Payment: Fuel purchase of 62 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,74,Thu Jul 25 2024 17:39:57 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+456f9a65-2c0e-46e3-8104-b84ddab6cf33,Business Services Reimbursement: Fuel purchase of 10 gallons of regular fuel reimbursed.,purchase,in,1,Jeffrey Bones,null,61491562,Kyle Pred,Personal Account,12,Thu Jul 25 2024 17:44:57 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+22a9d45f-e037-4082-abbe-22c0c8f88938,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,600,Thu Jul 25 2024 19:00:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+133ebf64-3fc9-4c18-b67b-81d73896be9c,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,12000,Thu Jul 25 2024 19:33:50 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+9e8452e5-750d-41e0-afd7-f74e64c2e02f,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,4800,Thu Jul 25 2024 19:33:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+638a0505-7f63-4245-8e7c-b1b30ce1288a,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,2400,Thu Jul 25 2024 19:34:07 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+038cf83d-54f0-4523-84ca-0177379d2082,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,960,Sat Jul 27 2024 13:16:12 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0558d40e-e815-4f39-92b2-c44bfb8f7e0e,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,960,Tue Jul 30 2024 14:08:55 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+015e4a16-955e-4d12-bc4f-acaf577a30cd,Business Services Payment: Fuel purchase of 77 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,92,Tue Jul 30 2024 14:19:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d312a3a6-e822-41d3-a7e0-87c172f1e498,Business Services Reimbursement: Fuel purchase of 13 gallons of regular fuel reimbursed.,purchase,in,1,null,null,61491562,Kyle Pred,Personal Account,16,Tue Jul 30 2024 14:24:22 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+1f2f02e4-dbd7-490e-a76c-84eac991cc24,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,90,Tue Jul 30 2024 14:30:54 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+c006df81-13fc-4d01-b4f7-046cb9f4e17f,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,60,Tue Jul 30 2024 14:31:45 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a7b2685a-5074-4115-9091-eeb3c0e09dad,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,30,Tue Jul 30 2024 14:32:23 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+13dfd474-e1d5-4c9f-9db2-e801d2644e5e,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,1,null,null,30,Tue Jul 30 2024 15:40:13 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+5ed88c73-c06e-47a6-8981-221610301042,Restaurant Order Payment 75b62fd7-cde2-4458-9cf7-b0a51a44b830
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,450,Sat Aug 03 2024 14:14:08 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6d2a8ba7-4e00-42af-b071-78d5d7e57350,Restaurant Order Payment 75b62fd7-cde2-4458-9cf7-b0a51a44b830,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,2250,Sat Aug 03 2024 14:14:08 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+78e145cf-3450-407b-9ba2-c8c981c1066d,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Thu Aug 08 2024 14:06:15 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+f2193ed1-455f-486a-baa9-e48bdf846857,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Thu Aug 08 2024 14:06:15 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ef0d9142-3c03-4784-a9f3-11a2ec28b2b9,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,10,Thu Aug 08 2024 14:10:27 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d859cf6d-f799-4af9-849a-7c03a54fbf8b,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,50,Thu Aug 08 2024 14:10:27 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+81183c3b-cb4d-489b-acfa-6990e0a307d5,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Thu Aug 08 2024 14:15:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+f242bdd5-0b5d-4a86-86d2-9f5b16cac42f,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Thu Aug 08 2024 14:15:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b256d310-6fb7-48e2-b303-8fc13b679fc5,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Thu Aug 08 2024 14:15:16 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+e54722ab-dc46-48ad-b598-aed0d51943c8,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Thu Aug 08 2024 14:15:16 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a7817adc-5c38-4195-b430-80f9e9728bc8,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Thu Aug 08 2024 14:18:09 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+f455d031-45f5-48e9-9b0f-26a8a69ecbef,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Thu Aug 08 2024 14:18:10 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a54bed83-848a-4ef6-8034-e3cc464e576e,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,35,Thu Aug 08 2024 14:59:27 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+59ab1e12-1623-4d5c-a221-3db4d566972e,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,175,Thu Aug 08 2024 14:59:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+21ed9156-9636-4667-81df-f7755cbbaa68,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Thu Aug 08 2024 15:01:11 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4417b396-842c-4afb-b826-438edb8fd74b,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Thu Aug 08 2024 15:01:11 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+16a65530-43c5-4c1e-808e-d946f352f2d4,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Thu Aug 08 2024 15:12:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+e5d6fa87-4b89-4f7e-a746-255fffcbe3cf,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Thu Aug 08 2024 15:12:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b5d75793-d58d-4d18-b943-34b9b873fa80,Restaurant Order Payment 8912671b-40a7-4b0b-b6d8-fef63a558e54
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,500,Thu Aug 08 2024 15:25:55 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d1c53a49-c9b7-4d1f-a4cd-68006c54216d,Restaurant Order Payment 8912671b-40a7-4b0b-b6d8-fef63a558e54,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,2500,Thu Aug 08 2024 15:25:55 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d1c22d3a-f4f4-49c4-ba9f-4b0caa337d35,Restaurant Order Payment 670a091b-284d-4f32-9898-7728895d1da5
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,200,Thu Aug 08 2024 17:26:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+24049b29-61ef-415f-97d4-040e563a2e2d,Restaurant Order Payment 670a091b-284d-4f32-9898-7728895d1da5,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,1000,Thu Aug 08 2024 17:26:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+e4ee46ad-fc1e-492f-ba7d-0ae0e3c425a2,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,20,Tue Aug 13 2024 14:19:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b58c6013-7430-4dc5-ad4f-0575ecce7a84,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Tue Aug 13 2024 14:19:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+9fab1999-cfbe-4af1-afcd-b74cf58f8974,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Tue Aug 13 2024 14:20:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0cbda59d-8c01-4eac-b99d-e287d922f825,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Tue Aug 13 2024 14:20:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a6b32a8d-a224-44ec-b819-36772444d6f5,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Tue Aug 13 2024 14:22:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ec1c5508-7b3f-4f29-9f1a-8fdc18571657,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Tue Aug 13 2024 14:22:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ea20b63e-f7bb-4c23-b47e-d1a5fb0a082a,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,9,Tue Aug 13 2024 18:12:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+94cc05b8-198c-47e8-8d0d-ba707e0e2fbd,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,44,Tue Aug 13 2024 18:12:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1ce34cee-3590-40db-99e3-e0280603caad,Blaine County Paycheck,payslip,in,11,Government Pay,null,61491562,Kyle Pred,Personal Account,340,Tue Aug 13 2024 18:51:39 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ff40f2d0-c7a6-4a8a-8b9c-0079aee5fbf8,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,9000,Tue Aug 13 2024 18:51:57 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+3f556fa2-cba2-4ca1-9072-a01381f6b9b4,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,18,Tue Aug 13 2024 19:38:47 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+eddd2e26-d9df-41bf-9e94-e5e0e41daaf1,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,89,Tue Aug 13 2024 19:38:47 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+82fa1cba-36a9-4528-9ad2-1cb7f2a4eacd,Business Services Payment: Fuel purchase of 56 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,11,Tue Aug 13 2024 19:43:23 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+98fa9976-df24-4230-9dc6-750b170db031,Business Services Payment: Fuel purchase of 56 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,56,Tue Aug 13 2024 19:43:23 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+00990c36-a79f-4422-9ece-cf1a1e648ace,Business Services Reimbursement: Fuel purchase of 15 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,18,Tue Aug 13 2024 19:43:47 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bcb88a5c-1f3b-491d-a7fe-309db5fb8899,Business Services Reimbursement: Fuel purchase of 9 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,11,Tue Aug 13 2024 19:48:23 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+55e37a32-87f2-4844-a19d-9ec39d55ec01,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,96,Tue Aug 13 2024 20:27:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+3e271e17-31f9-40df-a5fe-c5e18497a336,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,480,Tue Aug 13 2024 20:27:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+30f36251-15c9-4357-b8ff-485d598111fe,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,30,Tue Aug 13 2024 20:34:06 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1fc9edce-21f9-42ea-98a4-dc5d8f6075a8,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,150,Tue Aug 13 2024 20:34:06 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ab61525f-814c-468d-a741-1544be447d9b,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,5,Tue Aug 13 2024 20:34:31 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1e05029c-525b-4189-9907-5a3fbd4227f4,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,25,Tue Aug 13 2024 20:34:31 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d3baaa3b-3576-41fa-9e98-6b9bf611912d,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,252,Tue Aug 13 2024 20:50:02 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+17fe7c40-e29d-4084-bff4-f07cdbd65ae1,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,1260,Tue Aug 13 2024 20:50:02 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4fd1d30c-4094-4735-b49b-c435a1406510,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Thu Aug 15 2024 15:09:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a5ad5ec4-fbaa-4a61-9064-8f2170905702,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Thu Aug 15 2024 15:09:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4209cf8d-9eec-4dde-b3b0-f2ac487522ea,Restaurant Order Payment 1787e44c-8ee5-4177-bc0d-014478cb434d
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Thu Aug 15 2024 15:19:20 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+98e30c35-2239-42e8-8d32-722b4bc6a4b9,Restaurant Order Payment 1787e44c-8ee5-4177-bc0d-014478cb434d,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,500,Thu Aug 15 2024 15:19:20 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4158e922-8ec0-4d0c-b96a-0b49289f6b6b,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Thu Aug 15 2024 15:34:45 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+afd0a3db-ea94-4b5c-93ce-f8077b452d1b,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,500,Thu Aug 15 2024 15:34:45 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+dfc0232d-dd43-4b2e-b05d-220a33b8b2e2,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,108,Fri Aug 16 2024 00:42:21 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+00206cb0-b35f-4eb9-9ee3-336e9809fda2,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,540,Fri Aug 16 2024 00:42:21 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+66d8f4ed-13ba-47cd-8a3a-dd5858f5cbd6,Business Services Payment: Fuel purchase of 43 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,9,Fri Aug 16 2024 00:46:46 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+3bce32e0-8d23-4d48-aae7-7d96ebc54674,Business Services Payment: Fuel purchase of 43 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,43,Fri Aug 16 2024 00:46:46 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+bdbbf090-a561-4022-9a20-e1f38e96e9dc,Business Services Reimbursement: Fuel purchase of 7 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,8,Fri Aug 16 2024 00:51:46 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+f771bf53-1388-4f8a-903d-b1c7d756d682,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,5389,Fri Aug 16 2024 14:35:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bddeef67-868f-4778-8adf-658d236d7d45,Restaurant Order Payment e7266a6c-d527-4902-8c7f-c8f4d57dc0e4
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,120,Fri Aug 16 2024 17:41:48 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+3d12bcc6-e3b3-4021-9b9d-1e19264c3b78,Restaurant Order Payment e7266a6c-d527-4902-8c7f-c8f4d57dc0e4,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,600,Fri Aug 16 2024 17:41:48 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+55f9ec6a-6919-4dde-b806-7e6cee2aa1d5,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Fri Aug 16 2024 17:45:15 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7856a518-73ee-431b-aecb-8fa2e7114aa9,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Fri Aug 16 2024 17:45:15 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+8055db0e-d3e0-4aa8-aa35-d35a9fe4f7e7,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Fri Aug 16 2024 17:45:37 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a80d6940-aff3-48c2-9a87-0fb73c1dd602,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Fri Aug 16 2024 17:45:37 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+392accd3-461a-4a19-8615-fb45372732a5,Business Services Payment: Fuel purchase of 112 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,22,Fri Aug 16 2024 18:21:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+db686230-e186-476c-afdd-99931de467e8,Business Services Payment: Fuel purchase of 112 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,112,Fri Aug 16 2024 18:21:36 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1159b733-1f71-4520-9ad8-4b637196c1b4,Business Services Reimbursement: Fuel purchase of 19 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,23,Fri Aug 16 2024 18:26:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+36d70d28-2798-4259-971f-6f7630d575b2,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Wed Aug 21 2024 15:23:34 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+692c81f1-ccb5-461b-b80e-4fb163f453f6,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Wed Aug 21 2024 15:23:34 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+c7468cdc-fce6-45db-9103-a27adf9265c7,Business Services Payment: Fuel purchase of 86 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,17,Wed Aug 21 2024 16:01:06 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1db65039-a541-49d3-ad27-cf4cc679623b,Business Services Payment: Fuel purchase of 86 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,86,Wed Aug 21 2024 16:01:06 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+51286803-3e34-4885-adc7-1aaab066a757,Business Services Reimbursement: Fuel purchase of 14 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,17,Wed Aug 21 2024 16:06:06 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+caadb62d-9d77-4034-bb0e-2a4bd312c2f4,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Sat Aug 24 2024 18:23:49 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b6a3fa98-d3f1-406c-9d64-414e7fa4131f,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Sat Aug 24 2024 18:23:49 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+ea194bbe-781f-4d4f-8716-c13cc87fd90a,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,35,Sat Aug 24 2024 19:32:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a0e9ccef-8f5e-46fe-9e40-d6ee082273e1,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,175,Sat Aug 24 2024 19:32:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+62b2c96c-b5d2-416a-b885-8baa60233307,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,10,Sat Aug 24 2024 20:42:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6a54e3e2-0bca-45d3-bde5-f622b08e0d15,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,50,Sat Aug 24 2024 20:42:19 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+9594a7d2-5012-4814-a868-6ca13e72a34a,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Sat Aug 24 2024 20:43:27 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0711240b-6295-45f8-9b45-850476565043,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sat Aug 24 2024 20:43:27 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+28056efb-ef5c-4f33-9cdf-9912c8837af3,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,875,Sat Aug 24 2024 20:56:15 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0f78bab6-8b00-4205-9ebe-0967acd5adcc,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,610,Sat Aug 24 2024 21:47:46 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+f828c62c-9519-46bf-908b-76dfe604507a,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,632,Sat Aug 24 2024 21:55:22 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+2442c3ca-3db2-4bed-abf1-90909d5290e1,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,30,Sat Aug 24 2024 21:59:42 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+c29f1df0-74f3-48ee-8548-69877ad4567e,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,150,Sat Aug 24 2024 21:59:42 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7be7fab7-687e-4db3-a643-670dac2656a0,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Sat Aug 24 2024 22:19:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+df453526-d0f4-4e8d-ac3f-a45c00eed088,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Sat Aug 24 2024 22:19:00 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6772a692-dbd5-4700-99fe-499ca3857526,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Sat Aug 24 2024 22:19:33 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+20f9977f-ab01-4913-ab9a-b6eca55f04f3,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sat Aug 24 2024 22:19:33 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+525eedcb-104a-443c-bdd2-ae098923b842,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,824,Sat Aug 24 2024 22:23:01 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+528d2d02-4093-4565-8866-161b430f1364,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1057,Sat Aug 24 2024 22:35:19 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+90f07e93-95e0-4496-afb6-4c0748547fc4,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,732,Sat Aug 24 2024 22:48:10 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+3d34dea3-b4cf-4500-91a4-4d5ae965953a,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,903,Sat Aug 24 2024 23:17:05 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+5a96ec73-e660-4c55-b58c-2cf542ce3e35,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,856,Sat Aug 24 2024 23:44:31 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+e023caa5-363d-4241-a596-e7424242c45d,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,50,Sat Aug 24 2024 23:45:48 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+14536688-383b-43ab-a5ce-0d7b46d4eeb8,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,250,Sat Aug 24 2024 23:45:48 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+c0f17712-bc9b-43cc-b8c4-ab3923247eee,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1034,Sun Aug 25 2024 00:07:06 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+f52faf8c-ca6e-4acf-8aae-186d2a25811a,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1788,Sun Aug 25 2024 00:16:21 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bbf87fa1-8d39-4cb7-b512-b7c78dd4de85,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,570,Sun Aug 25 2024 00:20:16 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+a4e58f35-283b-4948-a742-e84f540b9247,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,696,Sun Aug 25 2024 00:26:22 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+eb1e7568-8fc9-4669-940f-41e38d768391,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1055,Sun Aug 25 2024 00:52:07 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+ce14fa6f-4da3-42b0-9f91-e4f6c7e39e3a,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1081,Sun Aug 25 2024 01:04:35 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+e579972d-df05-4ed9-886e-c95cef27a807,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,491,Sun Aug 25 2024 01:24:20 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+a9a47fd6-f627-4b98-88a1-2e80da130c6b,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,569,Sun Aug 25 2024 01:37:21 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+e8b01e0d-b5da-473c-a230-a33e761292e5,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,609,Sun Aug 25 2024 01:44:06 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+2bbe8093-5dc4-4b06-9776-3b95d9c67971,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,633,Sun Aug 25 2024 01:58:48 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+3ddcb663-e838-4565-8ddf-aaa4fd20dab3,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1131,Sun Aug 25 2024 02:07:01 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+f6263d41-c0fb-4084-9a09-585010bbeabf,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1104,Sun Aug 25 2024 02:26:34 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+0735b8d2-0005-4c1a-b777-d986377aaa9f,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1000,Sun Aug 25 2024 02:38:25 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+6a21d319-0b05-4a95-ad85-cff99edbad0f,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,603,Sun Aug 25 2024 02:48:31 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+11e05345-80df-4d9d-9612-1f462decfa64,Job: News,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,830,Sun Aug 25 2024 02:54:18 GMT+0000 (Coordinated Universal Time),15,No Tax,1
+be6b29f0-4c11-4918-a2ba-754c95d88bff,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Sun Aug 25 2024 02:55:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c4a6ce33-f483-42ac-b5b8-87f625b4493a,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Sun Aug 25 2024 02:55:37 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+7f33a8a1-f95c-4b2d-b21b-2b1853af5616,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Sun Aug 25 2024 02:55:42 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bebc699d-4100-4adb-b726-8197d0a3e6b2,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Sun Aug 25 2024 02:55:48 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b4d6a999-4b77-4692-9137-320547907203,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Sun Aug 25 2024 14:50:18 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0fc5a98e-0b3f-40c6-915c-a7c720763170,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Sun Aug 25 2024 14:50:18 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+cfa7bfa9-e73f-4356-94a3-7b7cfe32abcf,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,35,Sun Aug 25 2024 14:53:07 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+12fd20ba-6174-4b38-b1e2-6ed44ba61037,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,175,Sun Aug 25 2024 14:53:07 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0060a820-e2cf-4743-a5c2-373b6ea58002,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,3000,Sun Aug 25 2024 17:28:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+6bb18b8e-8be9-47c2-a929-1120b36b5b25,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1320,Sun Aug 25 2024 20:57:37 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+39563ef9-a30b-45bd-9d4b-54d2d518762e,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,20000,Sun Aug 25 2024 20:57:47 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+df6640bf-de30-4744-a669-19ddc6ef785e,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,20,Sun Aug 25 2024 21:41:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+97ca821d-f9a9-43c0-bdef-838177ff105c,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Sun Aug 25 2024 21:41:59 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+e603aca2-5308-4acc-940c-1e051fb42c75,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Sun Aug 25 2024 21:42:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4c52dd13-5ca5-4e70-b26d-d673e781d444,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sun Aug 25 2024 21:42:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+a8d6c981-0cd2-4115-86ab-0b3521b3c8e4,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Sun Aug 25 2024 21:42:43 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+5fce3b98-55b1-4f44-b1f6-d9194490aee0,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sun Aug 25 2024 21:42:43 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+75a582f7-2f86-4050-aab5-b89c2b15c4e4,Business Services Payment: Fuel purchase of 108 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,22,Mon Aug 26 2024 14:09:23 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+fe62f222-8684-4948-9feb-950a6f558f55,Business Services Payment: Fuel purchase of 108 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,108,Mon Aug 26 2024 14:09:23 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+3fe41198-aa26-494d-b278-0e6d1eec476e,Business Services Reimbursement: Fuel purchase of 18 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,22,Mon Aug 26 2024 14:14:23 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+173bfd12-7390-494c-a005-605ec577b1b2,Business Services Payment: Fuel purchase of 66 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,13,Mon Aug 26 2024 16:12:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+057db85e-6036-4598-ad09-7caa1cc458f7,Business Services Payment: Fuel purchase of 66 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,66,Mon Aug 26 2024 16:12:58 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0e19cb85-31ad-432b-89b7-78f59f442004,Business Services Reimbursement: Fuel purchase of 11 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,13,Mon Aug 26 2024 16:17:58 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+37d61aff-67e7-4324-adfa-1a2c71fdc913,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,140,Mon Aug 26 2024 16:59:16 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+80b59964-d26d-48df-92f5-d6d239ce34ef,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,700,Mon Aug 26 2024 16:59:16 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7232106b-3f30-4cbe-8736-43d0d89b381f,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2500,Mon Aug 26 2024 17:18:43 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+a1430a66-2068-48ed-ac71-9c6dc41afba8,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1043,Mon Aug 26 2024 17:18:46 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b64564ec-9843-4553-a85a-1fa3676b06cd,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Mon Aug 26 2024 19:59:50 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+e0991fcb-7c70-41ed-a4ab-86bbf04fc42a,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Mon Aug 26 2024 19:59:50 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+78353a38-6b7c-4c9a-b4a9-406746ac8ab9,,transfer,out,61491562,Kyle Pred,Personal Account,61313972,Ductape Lopez,Personal Account,4000,Mon Aug 26 2024 20:55:15 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c3be9c75-eb1c-41ac-9998-095df869e6e7,Business Services Payment: Fuel purchase of 77 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Mon Aug 26 2024 21:05:43 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6b1059d7-acdd-4862-a729-34042a6778bc,Business Services Payment: Fuel purchase of 77 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,77,Mon Aug 26 2024 21:05:43 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7ff62816-fd0e-46e2-bb80-9330e0e64b2e,Business Services Reimbursement: Fuel purchase of 13 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,16,Mon Aug 26 2024 21:10:43 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+71734bc3-0a5e-44b0-9cb3-853065bfe51f,Business Services Payment: Fuel purchase of 24 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Mon Aug 26 2024 22:15:38 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+eb17556f-7d7f-4fa4-85db-1e84d1a58adb,Business Services Payment: Fuel purchase of 24 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,24,Mon Aug 26 2024 22:15:38 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+16ca124f-5d93-4431-a747-06afe6c849a7,Business Services Reimbursement: Fuel purchase of 4 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,5,Mon Aug 26 2024 22:20:38 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+6928bbf3-277c-4973-8832-ae4acb876a0c,Business Services Payment: Fuel purchase of 61 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,12,Thu Aug 29 2024 17:09:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+cf1eb1ba-463c-4a34-a755-5e97894f2c45,Business Services Payment: Fuel purchase of 61 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,61,Thu Aug 29 2024 17:09:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+f72d4d11-f581-4aba-9935-23de8e595366,Business Services Reimbursement: Fuel purchase of 10 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,12,Thu Aug 29 2024 17:14:45 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+abe71bf3-2afb-4f82-976b-1e2913c471b2,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Tue Sep 03 2024 15:21:17 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+589d9047-b8dc-4be9-94f4-9a3c4d68b1d6,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Tue Sep 03 2024 15:21:17 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+80cdf5fc-1d07-45ab-aa38-14174f581e33,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,9000,Tue Sep 03 2024 15:31:08 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+435062f5-621f-4a42-9daf-c76cddca5d66,Business Services Payment: Fuel purchase of 56 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,11,Tue Sep 03 2024 17:14:35 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0d94597f-fc20-4f19-b746-c330514c665c,Business Services Payment: Fuel purchase of 56 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,56,Tue Sep 03 2024 17:14:35 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d1e9802b-661f-41fa-b571-f25d42c36fb5,Business Services Reimbursement: Fuel purchase of 9 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,11,Tue Sep 03 2024 17:19:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+bc729bf1-9cdb-4e0b-aa33-f370e9d3de29,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,5000,Tue Sep 03 2024 18:17:05 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+106e0327-519a-4864-b4f9-5130a273dabf,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Tue Sep 03 2024 19:00:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+136c1160-7dc6-45ae-aab9-24040d2dc643,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Tue Sep 03 2024 19:00:44 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+4a959975-b197-4814-b717-4060a13098cc,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,400,Tue Sep 03 2024 20:40:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+11215f82-cc20-4a51-9770-31d6f902e1f7,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Tue Sep 03 2024 20:40:28 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+d309ffef-f7ed-4b27-861e-8d11232b75a3,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,20,Tue Sep 03 2024 20:44:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+62ef1ab8-0ea7-4799-9c3c-c31aa5c3ea77,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Tue Sep 03 2024 20:44:01 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+0cf8b82f-783e-4921-81c3-a5c530ed59ee,ATM Withdrawal,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,1000,Tue Sep 03 2024 21:03:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+dfda4beb-78c4-4dcd-9baa-a19bd0d80745,ATM Usage Fee - a2174f85-602b-4b2b-8a09-23f4f856b5a8,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,50,Tue Sep 03 2024 21:03:37 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2c389d0e-84dd-4343-b57e-18f3449b5336,Restaurant Order Payment 22d9ab59-602b-4961-a5a8-bbd48f181e1b
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,60,Sat Sep 28 2024 18:25:56 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b9782b6a-edc0-490f-83bf-68e73f10b3a6,Restaurant Order Payment 22d9ab59-602b-4961-a5a8-bbd48f181e1b,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,300,Sat Sep 28 2024 18:25:56 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+953a69cf-cf74-4f3c-bfa4-1196cc427815,Restaurant Order Payment bc15afbe-8bbe-46cb-b6a3-f1ed4da32173
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,55,Sat Sep 28 2024 19:29:07 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b3893df9-a88f-433e-85c8-f65eb90b2800,Restaurant Order Payment bc15afbe-8bbe-46cb-b6a3-f1ed4da32173,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,275,Sat Sep 28 2024 19:29:07 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6fd6af4d-e292-4adc-bc02-cdd001483e63,License Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Tue Oct 01 2024 22:03:56 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d06923d4-3298-4b6a-b0bb-a9d41e9791d8,License Purchase,purchase,out,61491562,Kyle Pred,Personal Account,3,null,null,50,Tue Oct 01 2024 22:03:56 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+6148e012-01e0-4a0e-954e-cb6282d9b0d8,loan,transfer,in,61531309,Hailey Maxwell,Personal Account,61491562,Kyle Pred,Personal Account,50000,Tue Oct 01 2024 22:06:17 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+a0864cd3-4eaf-40c4-acdd-90b0b091437d,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,4,Thu Oct 03 2024 14:26:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+82458ef5-658b-496c-82b3-7a5f5ae6a7a0,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,44,Thu Oct 03 2024 14:26:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+33f7d21e-6cd9-4c3b-8ece-6449e9e7a27e,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,1525,Thu Oct 03 2024 14:38:02 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+6e93cf98-a521-4e08-88a2-3023541e9d5a,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15250,Thu Oct 03 2024 14:38:02 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+a06451ec-5910-4d0a-ac18-2edb32851b11,Business Services Payment: Fuel purchase of 44 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,4,Thu Oct 03 2024 14:43:02 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+86cefacd-b7cf-4156-bf4f-46cdba636f91,Business Services Payment: Fuel purchase of 44 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,44,Thu Oct 03 2024 14:43:02 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+ba926e13-142f-4b1e-8117-ce092a9b4051,Business Services Reimbursement: Fuel purchase of 4 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,4,Thu Oct 03 2024 14:48:02 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+fa08e438-18b2-44a3-af28-bd29146ce9ca,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,200,Thu Oct 03 2024 15:53:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+42ee9810-2625-4c19-a9ac-5d1a8eb2e46b,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Thu Oct 03 2024 15:53:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+e6ec0a4a-6ba7-4119-8d34-48a5331887ea,Job: Tow Trucker,payslip,in,11,Government Pay,null,61491562,Kyle Pred,Personal Account,246,Thu Oct 03 2024 17:13:31 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+2787cb81-640e-47eb-9ad7-1f5e504f6d00,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,3964,Thu Oct 03 2024 19:56:28 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+a2c1c5ff-d36d-4333-9218-fcaa11df6d68,Business Services Payment: Fuel purchase of 75 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Thu Oct 03 2024 21:04:32 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+9c82bf1a-769a-4f9b-b1e6-e24848b744bc,Business Services Payment: Fuel purchase of 75 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Thu Oct 03 2024 21:04:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fae886a3-ad64-4723-a98b-7d3ca85a048f,Business Services Reimbursement: Fuel purchase of 7 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,8,Thu Oct 03 2024 21:09:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4a841f46-b6e2-4e57-a2e9-9bcbe813e774,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,2000,Fri Oct 04 2024 16:57:50 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+9456ed02-10de-4a6b-a698-dee284a9bf1c,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Sat Oct 05 2024 14:10:41 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3f18780f-f7eb-4e80-aba0-5872e0ac1dc5,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sat Oct 05 2024 14:10:41 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+27ccb757-7227-4ea7-bce1-a9186015316d,Twatter Blu Subscription
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Sat Oct 05 2024 14:15:14 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fe86324d-48ed-442b-9e26-86a9ac663165,Twatter Blu Subscription,purchase,out,61491562,Kyle Pred,Personal Account,5,null,null,80,Sat Oct 05 2024 14:15:14 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+6883740d-114b-4362-9aef-88fb980dada9,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,996,Sat Oct 05 2024 14:35:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+f0ba4a3c-3823-4b02-ad22-6a704a99feee,Business Services Payment: Fuel purchase of 67 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7,Sat Oct 05 2024 15:07:01 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c76d3cd7-b107-4b9c-975f-08a3cac34b20,Business Services Payment: Fuel purchase of 67 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,67,Sat Oct 05 2024 15:07:01 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+208c55c3-4976-47e6-8691-8c6b3ea0c965,Business Services Payment: Fuel purchase of 68 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7,Sat Oct 05 2024 15:09:43 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b28fe30b-0d3a-4080-b06f-c1dc49dfb939,Business Services Payment: Fuel purchase of 68 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,68,Sat Oct 05 2024 15:09:43 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+051d54f7-f1ae-4807-8972-362a5bf531f7,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,7,Sat Oct 05 2024 15:12:01 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4cd099fb-4412-4fa0-9247-91893c8329f3,Business Services Payment: Fuel purchase of 63 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,6,Sat Oct 05 2024 17:13:52 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b902b066-2b40-485d-8a97-98a3d9ebafac,Business Services Payment: Fuel purchase of 63 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,63,Sat Oct 05 2024 17:13:52 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+294e0f6d-f87e-4971-ac09-571a6ab9a0ef,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,7,Sat Oct 05 2024 17:18:52 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+7c865e0c-f990-4829-82e3-c3d1e05480ee,Restaurant Order Payment 34127847-4310-478c-b600-ea98ecd7df25
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,55,Sat Oct 05 2024 17:21:37 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3e56af96-b041-4cdc-89ed-245feda74564,Restaurant Order Payment 34127847-4310-478c-b600-ea98ecd7df25,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,550,Sat Oct 05 2024 17:21:37 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+36634feb-2084-496e-bc20-1ace0d621952,,deposit,in,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,50000,Sat Oct 05 2024 22:51:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b6f70da2-3fdc-4bba-b669-d8c37b122777,Business Services Payment: Fuel purchase of 64 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,13,Sun Oct 06 2024 15:13:37 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+7667f2d3-4960-4615-9fd9-de9334591d4b,Business Services Payment: Fuel purchase of 64 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,64,Sun Oct 06 2024 15:13:37 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+1ecb46ea-aa24-4e7e-8899-4bce84f41a94,Business Services Reimbursement: Fuel purchase of 11 gallons of regular fuel reimbursed.,purchase,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,13,Sun Oct 06 2024 15:18:37 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+202c6e4a-152d-4d49-a726-7f4916665cf1,,transfer,in,61286706,Tyler Peters,Personal Account,61491562,Kyle Pred,Personal Account,10000,Sun Oct 06 2024 17:49:59 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+559ca715-233d-47be-9b7a-e437376e7b39,Business Services Payment: Fuel purchase of 63 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,6,Tue Oct 08 2024 14:57:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c99c05d5-6eb5-4bf8-a5db-c4729bf56b19,Business Services Payment: Fuel purchase of 63 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,63,Tue Oct 08 2024 14:57:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3bfe220a-a128-47c6-8124-dfa5b1224b1a,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,28,Tue Oct 08 2024 14:58:56 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fc9e1999-2e36-4e11-a096-7dec5a11f45a,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,275,Tue Oct 08 2024 14:58:57 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+e231d5cc-1308-4489-a683-a7bd7cfa531d,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,50,Tue Oct 08 2024 15:00:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+894d41de-d879-496e-977f-dfe62f3a1a7f,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,500,Tue Oct 08 2024 15:00:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+067fce38-6831-48f4-ab97-6bcf6f8f3f16,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,7,Tue Oct 08 2024 15:02:31 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+45a1d780-cc4f-41fa-a7d1-25ce3a7b4946,Business Services Payment: Fuel purchase of 40 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,4,Tue Oct 08 2024 19:13:46 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+0dfd0bef-097a-4bc5-96bb-71b2d1226431,Business Services Payment: Fuel purchase of 40 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,40,Tue Oct 08 2024 19:13:46 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d11ab729-c310-4c08-8485-4254b1a334ef,Business Services Reimbursement: Fuel purchase of 4 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,4,Tue Oct 08 2024 19:18:46 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d47b12d9-6c49-4fb6-af06-2e20cff959c3,,transfer,in,61135038,Alana Reviews,Personal Account,61491562,Kyle Pred,Personal Account,31000,Tue Oct 08 2024 21:48:48 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+631244d5-36b6-4dc6-b27a-294c49a1abae,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,11,Tue Oct 08 2024 22:14:08 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+11204a39-1db7-4710-a521-668e865e09bc,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,55,Tue Oct 08 2024 22:14:08 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+683264e2-5877-4431-af08-7e9f629da4f6,Business Services Reimbursement: Fuel purchase of 9 gallons of regular fuel reimbursed.,purchase,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,11,Tue Oct 08 2024 22:19:08 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2694d383-5a86-4569-8272-501961da8d68,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,6,Wed Oct 09 2024 16:43:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+1f0e154b-7680-43ee-a2ac-f09cc6f3bc09,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,55,Wed Oct 09 2024 16:43:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b50a3fe7-3a23-403e-a029-2afe4447c121,Business Services Reimbursement: Fuel purchase of 5 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,6,Wed Oct 09 2024 16:48:54 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+90715b36-be4e-49d0-8b39-83ba8ba1c1cf,Restaurant Order Payment edfe3845-67c6-470e-91f0-0b68ca22ead7
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,140,Wed Oct 09 2024 21:35:40 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+ec68bb21-a063-4f88-bb3c-46c70a6dce96,Restaurant Order Payment edfe3845-67c6-470e-91f0-0b68ca22ead7,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,1400,Wed Oct 09 2024 21:35:40 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+af0480a0-c7cf-4d05-bbd3-317ecda8a30e,Business Services Payment: Fuel purchase of 72 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7,Thu Oct 10 2024 14:39:34 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+650a1ea5-f9ba-420f-b245-7c25f8606337,Business Services Payment: Fuel purchase of 72 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,72,Thu Oct 10 2024 14:39:34 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c89a83c9-d571-43c4-8031-b1e2a4a7c75a,Restaurant Order Payment 15eddfc9-5a37-4404-908e-8e5918164daf
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,43,Thu Oct 10 2024 14:43:25 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+5498f01e-a249-43dc-8fb5-aefc0c4af223,Restaurant Order Payment 15eddfc9-5a37-4404-908e-8e5918164daf,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,425,Thu Oct 10 2024 14:43:25 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d0d4ed8b-f39c-4990-aa91-b6705c0df079,Business Services Reimbursement: Fuel purchase of 7 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,8,Thu Oct 10 2024 14:44:35 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+fdf213d5-ef14-4318-97f7-bdd98d296d13,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,10000,Fri Oct 11 2024 14:22:19 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+dbc3ff31-b8b3-42a3-beb3-3eb23ff8a6ae,Business Services Payment: Fuel purchase of 48 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Fri Oct 11 2024 18:28:00 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+ce6b7c25-460e-42fe-9536-82441f997427,Business Services Payment: Fuel purchase of 48 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,48,Fri Oct 11 2024 18:28:00 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+4f4eda38-6406-492b-b5a8-7b252f1f490e,Business Services Reimbursement: Fuel purchase of 4 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,5,Fri Oct 11 2024 18:33:01 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2d37bdb8-6c1d-4788-818f-08d1055a36d5,Twatter Blu Subscription
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Sat Oct 12 2024 18:18:06 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+4a6f70b3-1b7c-43ac-92fc-3d26d50a948c,Twatter Blu Subscription,purchase,out,61491562,Kyle Pred,Personal Account,5,null,null,80,Sat Oct 12 2024 18:18:06 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+6abc623e-cea6-4e3d-b7cb-0b3124b58a19,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,5405,Sat Oct 12 2024 19:32:07 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+faa74820-073f-4b1e-a98c-f57fc5ea947f,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Sat Oct 12 2024 19:47:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+701d9ffa-51aa-4b77-b90a-4d026898a379,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sat Oct 12 2024 19:47:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+8c3d77eb-7753-4ae9-8241-028a264d8a9b,Rental Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,60,Sat Oct 12 2024 19:52:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b97775fd-ee06-484d-b121-e56ddabedb58,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,600,Sat Oct 12 2024 19:52:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+617f5eef-47a4-4891-a70d-8b1a6c268129,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,6,Sun Oct 13 2024 15:05:40 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+5d28be18-b8ee-4026-8699-caace5ce1efd,Business Services Payment: Fuel purchase of 55 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,55,Sun Oct 13 2024 15:05:40 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3423759e-34f6-4851-aad6-be2001db0fbc,Business Services Reimbursement: Fuel purchase of 5 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,6,Sun Oct 13 2024 15:10:40 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+09665e1f-6e6e-4e1f-afef-d4d07fa7a6b1,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,1520,Tue Oct 15 2024 16:00:29 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+3445641e-e49a-4046-a86a-f16d981be7c4,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,10000,Tue Oct 15 2024 16:00:39 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+86b9a23d-1780-401f-b1d9-33dd7af94c88,Rental Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,60,Fri Oct 18 2024 14:35:41 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+8387eae5-bad5-4aa6-9cb8-4e7c2a9466aa,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,600,Fri Oct 18 2024 14:35:41 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+214c5862-b718-449d-9c7f-8c1b1adc3b96,Business Services Payment: Fuel purchase of 65 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7,Fri Oct 18 2024 21:38:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+408d5957-46c7-42f2-867f-30632abec029,Business Services Payment: Fuel purchase of 65 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,65,Fri Oct 18 2024 21:38:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+869395f5-17ed-4d8a-983e-e235ade820af,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,7,Fri Oct 18 2024 21:43:56 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+d1c3ecef-cc41-43b3-90d4-7fc59e79934d,Twatter Blu Subscription
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Sun Oct 20 2024 14:11:24 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+1ac63c94-25a3-4f3c-8b93-6918109192e0,Twatter Blu Subscription,purchase,out,61491562,Kyle Pred,Personal Account,5,null,null,80,Sun Oct 20 2024 14:11:25 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+e888035d-824a-43e0-834c-bdc8809a0848,Rental Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,60,Sun Oct 20 2024 14:38:26 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d4bcc146-1855-4f0f-a9b2-4d6d622d9f01,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,600,Sun Oct 20 2024 14:38:26 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+a8ca6331-18a6-4e8c-9bca-963eeb170f9c,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,13,Sun Oct 20 2024 15:18:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+9babaedc-1704-4fd2-b138-909a5a91dd9a,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,125,Sun Oct 20 2024 15:18:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+6635f800-8631-40c9-8c1f-235efc12f7d0,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Sun Oct 20 2024 15:19:35 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+677f2671-a1ae-4684-ac92-ca015fab593d,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sun Oct 20 2024 15:19:35 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3e59326b-5606-4207-bec3-cad986066063,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Sun Oct 20 2024 15:20:13 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+4121bce6-e09a-4e12-9a66-41106f075111,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Sun Oct 20 2024 15:20:13 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+5e13bf9b-36fa-4a8f-a9a9-f97b893b86e1,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,200,Sun Oct 20 2024 21:47:49 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+88b10619-e112-44b4-8063-cf7a7b21aa91,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Sun Oct 20 2024 21:47:49 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+169f51b4-0b73-44b0-99d5-19e89731046e,Business Services Payment: Fuel purchase of 51 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Mon Oct 21 2024 14:39:11 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3e712522-3e66-45f6-aa5c-de1e0b822d7f,Business Services Payment: Fuel purchase of 51 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,51,Mon Oct 21 2024 14:39:11 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+0e1ad84f-4436-4963-888b-93d922281cfd,Business Services Reimbursement: Fuel purchase of 5 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,6,Mon Oct 21 2024 14:44:11 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+04e5e87b-32ed-4be9-b3df-80afe56603e2,Business Services Payment: Fuel purchase of 78 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,16,Mon Oct 21 2024 17:53:12 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+2180db3b-b5ba-41ff-b27c-7ac639556309,Business Services Payment: Fuel purchase of 78 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,78,Mon Oct 21 2024 17:53:12 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+6c3303f6-f62f-42ea-8dc6-4cb5d1ce8c9f,Business Services Reimbursement: Fuel purchase of 13 gallons of regular fuel reimbursed.,purchase,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,16,Mon Oct 21 2024 17:58:13 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+41bb6a09-6f2b-479e-8add-7ced3a97cc45,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,10,Mon Oct 21 2024 18:24:10 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+f9c5f223-aba7-4cc5-a292-8ed31b98eaac,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,100,Mon Oct 21 2024 18:24:11 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+2e3df3a1-b288-4660-83fa-fd31e03e94fc,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Mon Oct 21 2024 18:29:05 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+096d6b27-652d-425a-bd23-6e163fa16f55,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Mon Oct 21 2024 18:29:05 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+dd2a03b7-2cd0-4ddf-93b3-1197df21bfe3,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Mon Oct 21 2024 18:31:00 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+cfa7f135-00d0-4162-bfbf-b32ecf3164f8,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Mon Oct 21 2024 18:31:00 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+dc442469-c505-4044-8488-7ccf3f248cf9,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Mon Oct 21 2024 18:34:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+a12055b6-73cf-4749-b7ed-0df268137a6b,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75,Mon Oct 21 2024 18:34:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b77a9639-4a62-498b-9d34-081502c25031,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Mon Oct 21 2024 18:35:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+832b6425-575e-44bd-9d9e-d4cb96710749,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Mon Oct 21 2024 18:35:53 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fcfb4841-0ac0-4c5c-aeda-6139020fd2eb,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Mon Oct 21 2024 18:37:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+96ca3d2b-c433-4b45-a43f-a86b72c2ceb0,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Mon Oct 21 2024 18:37:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+43c25cea-6e1f-4179-bcbb-97982d579862,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,16463,Tue Oct 22 2024 14:19:00 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+89dd6c4f-b155-4c93-98c3-aa2abb40962f,Rental Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,120,Tue Oct 22 2024 16:07:05 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+b2951801-7544-4d17-81a9-e0d821c7c819,Rental Purchase,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,600,Tue Oct 22 2024 16:07:05 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+de624565-86ba-44ad-8e6e-f4cd9be24739,Blaine County Paycheck,payslip,in,11,Government Pay,null,61491562,Kyle Pred,Personal Account,4681,Tue Oct 22 2024 16:08:36 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+19002ee6-70cc-4452-8f13-8744c309b113,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Tue Oct 22 2024 16:31:24 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+03645e93-542a-47c6-ab84-ee98534f8691,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,150,Tue Oct 22 2024 16:31:24 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fac3728e-7fb9-434b-8c72-5010569e5bae,Showroom Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7500,Tue Oct 22 2024 17:38:52 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+ca8e6001-00fd-46e4-96f4-f971de2a7cd3,Showroom Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,75000,Tue Oct 22 2024 17:38:52 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+bd52237a-67a3-443b-9068-5ac1b2975030,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,17242,Wed Oct 23 2024 18:46:41 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+8e7bc1cd-13ee-4d3a-a9db-ec441ebc227c,Business Services Payment: Fuel purchase of 79 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Thu Oct 24 2024 15:56:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+81e79d5b-8279-476c-bb54-2a23387437ab,Business Services Payment: Fuel purchase of 79 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,79,Thu Oct 24 2024 15:56:15 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+7d695137-daef-45aa-9bbd-b7cdfae2e24d,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,9,Thu Oct 24 2024 16:59:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c729a076-7f8e-456f-9a1b-a60fbd0580cd,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,89,Thu Oct 24 2024 16:59:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+227396c7-19a0-427e-b9d4-5686d9b955c6,Business Services Reimbursement: Fuel purchase of 8 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,9,Thu Oct 24 2024 17:04:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+1ec72288-edca-4467-8780-bc2538cd25f4,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,15,Thu Oct 24 2024 19:39:11 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+3c6d90da-db1d-4250-8a00-e491e41eaad3,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,150,Thu Oct 24 2024 19:39:11 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b5b958f9-eb7b-45e8-9810-ac71cab9bb97,Blaine County Paycheck,payslip,in,11,Government Pay,null,61491562,Kyle Pred,Personal Account,4665,Fri Oct 25 2024 15:11:05 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b36d24b2-abeb-49df-9d03-47b6de676e9a,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,20662,Fri Oct 25 2024 15:20:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2291fbc9-6879-4cbc-91b3-fd41b56a10b5,Business Services Payment: Fuel purchase of 101 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,20,Fri Oct 25 2024 16:53:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+64c7b699-4677-4018-908f-df534cd33498,Business Services Payment: Fuel purchase of 101 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,11,null,null,101,Fri Oct 25 2024 16:53:14 GMT+0000 (Coordinated Universal Time),20,No Tax,1
+23db806c-bcf2-4359-9193-f99426cd7a4b,Business Services Reimbursement: Fuel purchase of 17 gallons of regular fuel reimbursed.,purchase,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,20,Fri Oct 25 2024 16:58:14 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+612568d8-6ea8-43d5-83cc-2bc8052cf2e9,VEHICLE PURCHASE PLUS TAX , VEHICLE AND PAYMENTS ARE PROPERTY OF THE STATE , VEHICLE PROCURRED BY KYLE PRED ON 10/22/2024 - AUTHORIZED BY WARLORD KYLE PRED,transfer,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,82500,Fri Oct 25 2024 20:03:29 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+b6727dd6-4317-4c60-a440-27a1cc6522e9,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,10046,Sat Oct 26 2024 14:16:06 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+dfde9064-c56e-469e-b2e9-dd12a2153cea,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,1000,Sat Oct 26 2024 15:15:22 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+8bd5ce20-e9a4-45e8-9476-d12915d12c87,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,10000,Sat Oct 26 2024 15:15:22 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+4fe7e00a-3571-428b-9e4f-635a156af1ed,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,200,Sat Oct 26 2024 15:15:34 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+9df18fbf-7ccd-4b38-9a38-119936037b04,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,2000,Sat Oct 26 2024 15:15:34 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+986d8c79-db67-4c43-a5ce-a5199d626857,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,9,Sat Oct 26 2024 17:07:10 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+880d9ba9-2b6f-4e29-9e56-9d3618816f52,Business Services Payment: Fuel purchase of 89 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,89,Sat Oct 26 2024 17:07:10 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+57d35170-8368-46cc-a65e-95b45ea70542,Business Services Reimbursement: Fuel purchase of 8 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,9,Sat Oct 26 2024 17:12:10 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ff0665c0-cbe9-478a-8764-fb7ec9d8dbd8,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,17100,Sat Oct 26 2024 22:42:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+3102a9fa-a0c5-4df8-94a6-1f038b3c5afb,Los Santos Paycheck,payslip,in,10,Government Pay,null,61491562,Kyle Pred,Personal Account,2565,Sun Oct 27 2024 14:13:53 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+fda907bc-ba17-4fc0-9adb-22d1abecc100,Business Services Payment: Fuel purchase of 69 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,7,Sun Oct 27 2024 14:40:26 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+b52532e1-cd4a-4082-b409-ba1beac45563,Business Services Payment: Fuel purchase of 69 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,69,Sun Oct 27 2024 14:40:26 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+dca37983-5bf2-4a40-8e0f-d0750a4f6e46,Business Services Reimbursement: Fuel purchase of 6 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,7,Sun Oct 27 2024 14:45:27 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+4473b6a9-a562-4bc0-8095-9c1a88cb008b,Twatter Blu Subscription
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Sun Oct 27 2024 18:11:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+9869964d-0c8d-4f3d-a440-ad812cae0ebf,Twatter Blu Subscription,purchase,out,61491562,Kyle Pred,Personal Account,5,null,null,80,Sun Oct 27 2024 18:11:33 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c983d1a1-0aeb-40cc-a1d6-50a7f08da237,Blaine County Paycheck,payslip,in,11,Government Pay,null,61491562,Kyle Pred,Personal Account,18154,Sun Oct 27 2024 21:17:18 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ffbf7a23-c4fc-4c35-8593-6720ad048a3c,$5,000,000 PAID TO SONYA SUMMERS TO ATTAIN PROPERTY TO USE FOR COUNTY PURPOSES - WARLORD PRED,transfer,in,11,Kyle Pred,null,61491562,Kyle Pred,Personal Account,5000000,Sun Oct 27 2024 21:18:38 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+444ae045-be0b-4827-a07b-51c4c42b08db,Property Transfer: Paleto,Great Ocean Hwy,230,purchase,out,61491562,Kyle Pred,Personal Account,61882308,Sonya Summers,Personal Account,5000000,Sun Oct 27 2024 21:19:16 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+db00d41e-e6f3-4402-b6fb-6f3b17e6db14,Store Purchase
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,320,Sun Oct 27 2024 21:25:37 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d9f4d2d6-4293-4fd6-9a50-51e102c0a630,Store Purchase,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3200,Sun Oct 27 2024 21:25:37 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+1079f0f9-a779-4543-8f99-01be7e491415,Business Services Payment: Fuel purchase of 102 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,10,Sun Oct 27 2024 21:26:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+21de7da5-8b04-413d-9631-5e3f3c5224b1,Business Services Payment: Fuel purchase of 102 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,102,Sun Oct 27 2024 21:26:55 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+69e7cdde-2403-41a7-af1b-78ca5941f06e,Business Services Reimbursement: Fuel purchase of 9 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,11,Sun Oct 27 2024 21:31:56 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+ca0228f6-5a4c-4e77-b4e4-0e38bea90803,Clothing Store
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,3,Tue Oct 29 2024 16:04:39 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+19827116-0199-4cc2-bd59-97d958651373,Clothing Store,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,25,Tue Oct 29 2024 16:04:39 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+4306ab40-b01e-4532-8123-81f280cf8969,Business Services Payment: Fuel purchase of 51 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,5,Tue Oct 29 2024 16:46:32 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+fce6c894-dde3-4e9a-a6ae-23709b5d83d9,Business Services Payment: Fuel purchase of 51 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,51,Tue Oct 29 2024 16:46:32 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+2a85f63f-d38a-49e6-b744-01a6368ab112,Business Services Reimbursement: Fuel purchase of 5 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,6,Tue Oct 29 2024 16:51:33 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+c2d121e6-c69c-4a4d-a2b4-fd77b11b85c0,,withdraw,out,61491562,Kyle Pred,Personal Account,61491562,Kyle Pred,Personal Account,12000,Tue Oct 29 2024 18:42:50 GMT+0000 (Coordinated Universal Time),0,No Tax,1
+2e7471b1-cb4d-4184-9ffd-34621951e226,Restaurant Order Payment 6219f54a-2514-4255-9c0b-c7dc08338754
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,60,Tue Oct 29 2024 20:16:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+1e76ec5d-3470-4eb1-876d-e7cb9d9b4445,Restaurant Order Payment 6219f54a-2514-4255-9c0b-c7dc08338754,purchase,out,61491562,Kyle Pred,Personal Account,8,null,null,600,Tue Oct 29 2024 20:16:31 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d7aa6e61-aeda-4cb6-8501-4b045a9d142c,Business Services Payment: Fuel purchase of 78 gallons of regular fuel.
+Type: Tax,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,8,Tue Oct 29 2024 23:39:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+c3b6127d-3150-4565-b329-39f4e29060be,Business Services Payment: Fuel purchase of 78 gallons of regular fuel.,purchase,out,61491562,Kyle Pred,Personal Account,10,null,null,78,Tue Oct 29 2024 23:39:30 GMT+0000 (Coordinated Universal Time),10,No Tax,1
+d33406ff-6281-4482-bef9-1cf490995c1a,Business Services Reimbursement: Fuel purchase of 7 gallons of regular fuel reimbursed.,purchase,in,10,Kyle Pred,null,61491562,Kyle Pred,Personal Account,8,Tue Oct 29 2024 23:44:30 GMT+0000 (Coordinated Universal Time),0,No Tax,1

@@ -2,7 +2,7 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
         <script type="module">
-            import { DataTable, convertCSV } from 'https://esm.sh/simple-datatables@9.2.1';
+            import { DataTable, convertJSON } from 'https://esm.sh/simple-datatables@9.2.1';
 
             const loadCSV = async () => {
                 const url = document.getElementById("url").value.trim();
@@ -25,11 +25,8 @@
                 const newTable = document.createElement("table");
                 results.append(newTable);
                 results.datatable = new DataTable(newTable);
-                results.datatable.insert(convertCSV({
-                    data: response.trim(),
-                    headings: true,
-                    columnDelimiter: ",",
-                    lineDelimiter: "\n"
+                results.datatable.insert(convertJSON({
+                    data: response.trim()
                 }));
             }
 
@@ -50,12 +47,19 @@
             document.querySelector("button").addEventListener("click", () => {
                 loadCSV(document.getElementById("url").value);
             });
+
+            loadCSV();
         </script>
+        <style>
+            tbody > tr:nth-child(odd) {
+                background-color: rgb(237, 238, 237);
+            }
+        </style>
     </head>
     <body>
-        <form>
+        <form style="visibility: hidden;">
             <label for="url">Link</label>
-            <input type="text" id="url" name="url" value="./test.csv">
+            <input type="text" id="url" name="url" value="./bank_transactions.json">
             <button type="button">Load</button>
         </form>
         <div id="results"></div>
