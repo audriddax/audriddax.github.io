@@ -24,7 +24,9 @@
 
                 const newTable = document.createElement("table");
                 results.append(newTable);
-                results.datatable = new DataTable(newTable);
+                results.datatable = new DataTable(newTable, {
+                    perPage: 100
+                });
                 results.datatable.insert(convertJSON({
                     data: response.trim()
                 }));
