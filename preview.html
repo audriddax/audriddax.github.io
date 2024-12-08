@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            body > div {
+                display: grid;
+                grid-template-columns: auto max(400px);
+                grid-template-rows: auto max(180px);
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .section-queue {
+                grid-row: span 2;
+            }
+
+            .section-video {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .section-video > video {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <div class="section-video text-bg-info">
+                <video style="object-fit: contain;" src="https://production.assets.clips.twitchcdn.net/v2/media/BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd/58c639ca-fca8-48a6-b5f4-4268d88103de/video.mp4?sig=370b75c7561eaf496fd36f4639fc28f5bf94c38c&amp;token=%7B%22authorization%22%3A%7B%22forbidden%22%3Afalse%2C%22reason%22%3A%22%22%7D%2C%22clip_uri%22%3A%22%22%2C%22clip_slug%22%3A%22BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd%22%2C%22device_id%22%3Anull%2C%22expires%22%3A1733744812%2C%22user_id%22%3A%22%22%2C%22version%22%3A2%7D" controls=""></video>
+            </div>
+            <div class="section-queue text-bg-warning">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#queue">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#session">Session Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#admin">Admin</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content p-1">
+                    <div id="queue" class="container tab-pane active">
+                        <div class="row p-1 m-1 fs-5 clip position-relative rounded bg-info">
+                            <div class="col-4 thumbnail" style="background-image: url(&quot;https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd/58c639ca-fca8-48a6-b5f4-4268d88103de/preview.jpg&quot;);">
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="text-truncate"><strong>Bobby defuses a bomb (REAL)</strong></p>
+                                    <p class="text-truncate">travpiper playing Grand Theft Auto V&nbsp;</p>
+                                    <p class="text-truncate fs-6">October 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1 m-1 fs-5 clip position-relative rounded bg-info">
+                            <div class="col-4 thumbnail" style="background-image: url(&quot;https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd/58c639ca-fca8-48a6-b5f4-4268d88103de/preview.jpg&quot;);">
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="text-truncate"><strong>Another clip</strong></p>
+                                    <p class="text-truncate">travpiper playing Grand Theft Auto V&nbsp;</p>
+                                    <p class="text-truncate fs-6">October 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-1 m-1 fs-5 clip position-relative rounded bg-info">
+                            <div class="col-4 thumbnail" style="background-image: url(&quot;https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd/58c639ca-fca8-48a6-b5f4-4268d88103de/preview.jpg&quot;);">
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="text-truncate"><strong>Imagine drag and drop</strong></p>
+                                    <p class="text-truncate">travpiper playing Grand Theft Auto V&nbsp;</p>
+                                    <p class="text-truncate fs-6">October 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="session" class="container tab-pane fade pt-3">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon3">Older Than # Hours</span>
+                            <input type="number" class="form-control text-center" step="1" value="0" />
+                        </div>
+                    </div>
+                    <div id="admin" class="container tab-pane fade"><br>
+                        <div>
+                            <h3>Tags</h3>
+                            <span class="badge rounded-pill text-bg-light">Meta</span>
+                            <span class="badge rounded-pill text-bg-light">Another tag that's active</span>
+                            <span class="badge rounded-pill text-bg-light">A tag that isn't active</span>
+                            <br />
+                            <button type="button" class="btn btn-success mt-3">Add Tag</button>
+                        </div>
+                        <br />
+                        <div>
+                            <h3>Blocked Videos</h3>
+                            <div class="row p-1 m-1 fs-5 clip position-relative rounded">
+                                <div class="col-4 thumbnail" style="background-image: url(&quot;https://static-cdn.jtvnw.net/twitch-clips-thumbnails-prod/BraveFaintPlumberDuDudu-u2s2wTGIn3AUMCRd/58c639ca-fca8-48a6-b5f4-4268d88103de/preview.jpg&quot;);">
+                                </div>
+                                <div class="col-8">
+                                    <div>
+                                        <p class="text-truncate"><strong>Bobby defuses a bomb (REAL)</strong></p>
+                                        <p class="text-truncate">travpiper playing Grand Theft Auto V&nbsp;</p>
+                                        <p class="text-truncate fs-6">October 23, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-details text-bg-dark text-center d-flex p-3">
+                <div class="flex-fill">
+                    <h1 class="fs-4">Bobby defuses a bomb (REAL)</h1>
+                    <h2 class="fs-5">travpiper playing Grand Theft Auto V</h2>
+                    <h2 class="fs-5">October 23, 2024</h2>
+                    <span class="badge rounded-pill text-bg-primary">Meta</span>
+                    <span class="badge rounded-pill text-bg-primary">Another tag that's active</span>
+                    <span class="badge rounded-pill text-bg-secondary">A tag that isn't active</span>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary w-100">Skip</button>
+                    <br />
+                    <button type="button" class="btn btn-secondary mt-3 w-100">Block 24 Hours</button>
+                    <br />
+                    <button type="button" class="btn btn-danger mt-3">Premanently Block</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
