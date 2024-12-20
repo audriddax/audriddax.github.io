@@ -5,7 +5,7 @@
             body > div {
                 display: grid;
                 grid-template-columns: auto max(400px);
-                grid-template-rows: auto max(180px);
+                grid-template-rows: auto max(200px);
                 height: 100vh;
                 width: 100vw;
             }
@@ -86,7 +86,11 @@
                     </div>
                     <div id="session" class="container tab-pane fade pt-3">
                         <div class="input-group">
-                            <span class="input-group-text" id="basic-addon3">Older Than # Hours</span>
+                            <span class="input-group-text" id="basic-addon3">Skip videos within last # Hours</span>
+                            <input type="number" class="form-control text-center" step="1" value="0" />
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon3">Timeout Minutes</span>
                             <input type="number" class="form-control text-center" step="1" value="0" />
                         </div>
                     </div>
@@ -122,16 +126,20 @@
                     <h1 class="fs-4">Bobby defuses a bomb (REAL)</h1>
                     <h2 class="fs-5">travpiper playing Grand Theft Auto V</h2>
                     <h2 class="fs-5">October 23, 2024</h2>
+                    <h3 class="fs-6">
+                        Submitted by SomeUser
+                        <button type="button" class="btn btn-sm btn-warning">Timeout User</button>
+                    </h3>
                     <span class="badge rounded-pill text-bg-primary">Meta</span>
                     <span class="badge rounded-pill text-bg-primary">Another tag that's active</span>
-                    <span class="badge rounded-pill text-bg-secondary">A tag that isn't active</span>
+                    <span class="badge rounded-pill text-bg-secondary" title="If you click me, I'm _supposed_ to be an active tag.">A tag that isn't active</span>
                 </div>
                 <div>
                     <button type="button" class="btn btn-primary w-100">Skip</button>
                     <br />
-                    <button type="button" class="btn btn-secondary mt-3 w-100">Block 24 Hours</button>
+                    <button type="button" class="btn btn-secondary mt-3 w-100">Block Video for 24 Hours</button>
                     <br />
-                    <button type="button" class="btn btn-danger mt-3">Premanently Block</button>
+                    <button type="button" class="btn btn-danger mt-3">Block Video Permanently</button>
                 </div>
             </div>
         </div>
