@@ -56,7 +56,7 @@ const useTwitchLogin = (accessToken) => {
     });
 
     return () => { abort = true; };
-  }, [accessToken]);
+  }, [accessToken, context.login.value]);
 };
 
 const validLogins = ["audriddax", "kyle", "strippin"];
