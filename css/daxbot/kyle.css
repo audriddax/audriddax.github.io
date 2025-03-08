@@ -3,8 +3,11 @@
     --theme-scrollbar-pill: #fb0ee3e9;
     --theme-background: #1e1d45;
     --theme-clip-queue: #4d2fb560;
+    --theme-clip-queue-kick: #5d836ab0;
     --theme-clip-watching: #fb0ee560;
+    --theme-clip-watching-kick: #00ff59b0;
     --theme-clip-hover: #780e8280;
+    --theme-clip-hover-kick: #2a7545b0;
     --theme-clip-border: #59b477B0;
     --theme-font: #ffffff;
 }
